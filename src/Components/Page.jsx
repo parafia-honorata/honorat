@@ -3,7 +3,7 @@ import FixedMenu from './FixedMenu'
 import Footer from './Footer'
 import PageContent from './PageContent'
 
-const MainComponent = () => {
+const Page = () => {
   return(
     <div className=''>
       <FixedMenu/>
@@ -13,4 +13,4 @@ const MainComponent = () => {
   )
 }
 
-export default MainComponent;
+export default Page;
