@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MainComponent = () => {
+const PageContent = () => {
   return(
     <div className=''>
       
@@ -8,4 +8,4 @@ const MainComponent = () => {
   )
 }
 
-export default MainComponent;
+export default PageContent;
