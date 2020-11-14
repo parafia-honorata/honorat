@@ -1,12 +1,16 @@
 import React from 'react'
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
+import MainPage from './Pages/MainPage';
 
 const PageContent = () => {
   return(
     <div className=''>
-      <Switch>
-        <Route  />
-      </Switch>
+      <BrowserRouter>
+        <Switch>
+          <Route path='/' component={MainPage}/>
+        </Switch>
+      </BrowserRouter>
+
     </div>
   )
 }

@@ -1,11 +1,12 @@
-import React from 'react'
-import FixedMenu from './FixedMenu'
-import Footer from './Footer'
-import PageContent from './PageContent'
+import React from 'react';
+import FixedMenu from './FixedMenu';
+import Footer from './Footer';
+import PageContent from './PageContent';
+import './Page.css';
 
 const Page = () => {
   return(
-    <div className=''>
+    <div className='page'>
       <FixedMenu/>
       <PageContent/>
       <Footer/>

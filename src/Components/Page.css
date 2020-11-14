@@ -1,0 +1,6 @@
+@import '~antd/dist/antd.css';
+
+.page {
+  font-family: "Libera", Helvetica, Arial, sans-serif;
+  display: flex;
+}
