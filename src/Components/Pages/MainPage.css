@@ -1,0 +1,9 @@
+.main-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-page .section {
+    display: flex;
+    flex-direction: row;
+}

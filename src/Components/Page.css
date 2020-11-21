@@ -2,5 +2,20 @@
 
 .page {
   font-family: "Libera", Helvetica, Arial, sans-serif;
+}
+
+.page .flex-box {
+  min-height: 1000px;
   display: flex;
+  flex-direction: column;
+}
+
+.page .navbar-placeholder {
+  height: 48px;
+  width: 100%;
+}
+
+.page .standard-pic {
+  width: 50%;
+  height: auto;
 }

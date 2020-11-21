@@ -11,29 +11,31 @@ const FixedMenu = () => {
   }
 
   return(
-    <Menu mode='horizontal' onClick={handleClick} selectedKeys={menuKey}>
-      <Menu.Item key='main'>
-        Strona Główna
-      </Menu.Item>
-      <Menu.Item key='info'>
-        Informacje
-      </Menu.Item>
-      <Menu.Item key='about'>
-        O Parafii
-      </Menu.Item>
-      <Menu.Item key='patron'>
-        Patron
-      </Menu.Item>
-      <Menu.Item key='priests'>
-        Nasi księża
-      </Menu.Item>
-      <Menu.Item key='rosary'>
-        Koło Żywego Różańca
-      </Menu.Item>
-      <Menu.Item key='links'>
-        Przydatne linki
-      </Menu.Item>
-    </Menu>
+    <div className='fixed-menu'>
+      <Menu mode='horizontal' onClick={handleClick} selectedKeys={menuKey}>
+        <Menu.Item key='main'>
+          Strona Główna
+        </Menu.Item>
+        <Menu.Item key='info'>
+          Informacje
+        </Menu.Item>
+        <Menu.Item key='about'>
+          O Parafii
+        </Menu.Item>
+        <Menu.Item key='patron'>
+          Patron
+        </Menu.Item>
+        <Menu.Item key='priests'>
+          Nasi księża
+        </Menu.Item>
+        <Menu.Item key='rosary'>
+          Koło Żywego Różańca
+        </Menu.Item>
+        <Menu.Item key='links'>
+          Przydatne linki
+        </Menu.Item>
+      </Menu>
+    </div>
   )
 }
 

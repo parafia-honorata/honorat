@@ -8,8 +8,11 @@ const Page = () => {
   return(
     <div className='page'>
       <FixedMenu/>
-      <PageContent/>
-      <Footer/>
+      <div className='flex-box'>
+        <div className='navbar-placeholder'/>
+        <PageContent/>
+        <Footer/>
+      </div>
     </div>
   )
 }
