@@ -6,14 +6,41 @@
 .main-page .section {
   display: flex;
   flex-direction: row;
+  margin-bottom: 50px;
 }
 
-
-.special {
-  flex: 1;
-  width: 1000px;
-}
-
-.special {
+.text {
+  padding: 20px;
   flex: 1;
 }
+
+.special {
+  width: 60%;
+  flex: 1;
+}
+
+.ant-carousel {
+  flex: 1;
+}
+
+.ant-carousel {
+  box-shadow: 3px 3px 8px gray;
+}
+
+.vertical-image {
+  box-shadow: 3px 3px 8px gray;
+  width: 70%;
+}
+
+.section.about {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+.about .special {
+  display: flex;
+  justify-content: flex-end;
+}
+

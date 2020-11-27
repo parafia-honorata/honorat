@@ -1,6 +1,7 @@
 .fixed-menu {
-  padding: 0 20px;
+  padding: 0 5px;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 100;
 }
@@ -12,4 +13,10 @@
 .ant-menu-item {
   display: flex;
   height: 60%;
+}
+
+
+.page .logo {
+  width: 60%;
+  height: auto;
 }

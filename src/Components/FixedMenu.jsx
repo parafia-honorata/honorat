@@ -15,10 +15,10 @@ const FixedMenu = () => {
     <div className='fixed-menu'>
       <Menu mode='horizontal' onClick={handleClick} selectedKeys={menuKey}>
         <Menu.Item key='main' disabled>
-        <img src={temporaryLogo} alt='logo' className='standard-pic'/>
+        <img src={temporaryLogo} alt='logo' className='logo'/>
         </Menu.Item>
         <Menu.Item key='info'>
-          Informacje
+          Ogłoszenia
         </Menu.Item>
         <Menu.Item key='about'>
           O Parafii

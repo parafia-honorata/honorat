@@ -3,22 +3,22 @@
 .page {
   font-family: "Libera", Helvetica, Arial, sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color:rgb(220, 220, 220);
 }
 
 .page .flex-box {
   min-height: 1000px;
   display: flex;
   flex-direction: column;
-  max-width: 1600px;
+  width: 100%;
+  padding: 0 80px;
 }
 
 .page .navbar-placeholder {
   height: 76px;
   width: 100%;
-}
-
-.page .standard-pic {
-  width: 50%;
-  height: auto;
 }
