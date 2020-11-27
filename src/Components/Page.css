@@ -2,17 +2,19 @@
 
 .page {
   font-family: "Libera", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 .page .flex-box {
   min-height: 1000px;
   display: flex;
   flex-direction: column;
-  margin: 0 40px;
+  max-width: 1600px;
 }
 
 .page .navbar-placeholder {
-  height: 48px;
+  height: 76px;
   width: 100%;
 }
 

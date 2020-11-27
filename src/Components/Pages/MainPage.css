@@ -1,9 +1,19 @@
 .main-page {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-page .section {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.special {
+  flex: 1;
+  width: 1000px;
+}
+
+.special {
+  flex: 1;
 }

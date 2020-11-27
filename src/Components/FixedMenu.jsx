@@ -1,6 +1,7 @@
 import { Menu } from 'antd';
 import React, {useState} from 'react';
 import './FixedMenu.css';
+import temporaryLogo from '../Assets/temporaryLogo.png';
 
 const FixedMenu = () => {
 
@@ -13,8 +14,8 @@ const FixedMenu = () => {
   return(
     <div className='fixed-menu'>
       <Menu mode='horizontal' onClick={handleClick} selectedKeys={menuKey}>
-        <Menu.Item key='main'>
-          Strona Główna
+        <Menu.Item key='main' disabled>
+        <img src={temporaryLogo} alt='logo' className='standard-pic'/>
         </Menu.Item>
         <Menu.Item key='info'>
           Informacje

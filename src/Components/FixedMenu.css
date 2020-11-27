@@ -4,3 +4,12 @@
   width: 100%;
   z-index: 100;
 }
+
+.fixed-menu.ant-menu {
+  display: flex;
+}
+
+.ant-menu-item {
+  display: flex;
+  height: 60%;
+}
