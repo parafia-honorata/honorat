@@ -4,6 +4,7 @@ import pic1 from '../../Assets/pic1.jpg';
 import pic2 from '../../Assets/pic2.jpg';
 import pic3 from '../../Assets/pic3.jpg';
 import pic5 from '../../Assets/pic5.jpg';
+import pic7 from '../../Assets/pic7.jpg';
 import './MainPage.css';
 
 const MainPage = () => {
@@ -65,15 +66,7 @@ const MainPage = () => {
       </div>
       <div className='section patron'>
         <div className='special'>
-
-        </div>
-        <div className='text'>
-          
-        </div>
-      </div>
-      <div className='section our-priests'>
-        <div className='special'>
-
+          <Image src={pic7} preview={false} alt='Pic7' className='vertical-image' />
         </div>
         <div className='text'>
           
