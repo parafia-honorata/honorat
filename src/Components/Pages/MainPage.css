@@ -56,3 +56,14 @@
   justify-content: flex-end;
 }
 
+.section.map {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+.map .special {
+  display: flex;
+  justify-content: flex-end;
+}
