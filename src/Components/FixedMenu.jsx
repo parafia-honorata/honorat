@@ -1,4 +1,4 @@
-import { Menu } from 'antd';
+import { Menu, Button } from 'antd';
 import React, {useState} from 'react';
 import './FixedMenu.css';
 import temporaryLogo from '../Assets/temporaryLogo.png';
@@ -18,22 +18,22 @@ const FixedMenu = () => {
         <img src={temporaryLogo} alt='logo' className='logo'/>
         </Menu.Item>
         <Menu.Item key='info'>
-          Ogłoszenia
+          <Button type="primary">Ogłoszenia</Button>
         </Menu.Item>
         <Menu.Item key='about'>
-          O Parafii
+          <Button type="primary">O Parafii</Button>
         </Menu.Item>
         <Menu.Item key='patron'>
-          Patron
+          <Button type="primary">Patron</Button>
         </Menu.Item>
         <Menu.Item key='priests'>
-          Nasi księża
+          <Button type="primary">Nasi księża</Button>
         </Menu.Item>
         <Menu.Item key='rosary'>
-          Koło Żywego Różańca
+          <Button type="primary">Koło Żywego Różańca</Button>
         </Menu.Item>
         <Menu.Item key='links'>
-          Przydatne linki
+          <Button type="primary">Przydatne linki</Button>
         </Menu.Item>
       </Menu>
     </div>
