@@ -1,4 +1,4 @@
-import { Menu, Button } from 'antd';
+import { Button } from 'antd';
 import React, {useState} from 'react';
 import './FixedMenu.css';
 import temporaryLogo from '../Assets/temporaryLogo.png';
@@ -9,33 +9,22 @@ const FixedMenu = () => {
 
   const handleClick = (e) => {
    setMenuKey(e.key);
+   console.log('Menu', menuKey);
   }
 
   return(
     <div className='fixed-menu'>
-      <Menu mode='horizontal' onClick={handleClick} selectedKeys={menuKey}>
-        <Menu.Item key='main' disabled>
+      <div className='menu-list'>
         <img src={temporaryLogo} alt='logo' className='logo'/>
-        </Menu.Item>
-        <Menu.Item key='info'>
-          <Button type="primary">Ogłoszenia</Button>
-        </Menu.Item>
-        <Menu.Item key='about'>
-          <Button type="primary">O Parafii</Button>
-        </Menu.Item>
-        <Menu.Item key='patron'>
-          <Button type="primary">Patron</Button>
-        </Menu.Item>
-        <Menu.Item key='priests'>
-          <Button type="primary">Nasi księża</Button>
-        </Menu.Item>
-        <Menu.Item key='rosary'>
-          <Button type="primary">Koło Żywego Różańca</Button>
-        </Menu.Item>
-        <Menu.Item key='links'>
-          <Button type="primary">Przydatne linki</Button>
-        </Menu.Item>
-      </Menu>
+        <Button type="primary" key={'main'} onClick={handleClick}>Strona główna</Button>
+        <Button type="primary" key={'news'} onClick={handleClick}>Ogłoszenia</Button>
+        <Button type="primary" key={'about'} onClick={handleClick}>O Parafii</Button>
+        <Button type="primary" key={'patron'} onClick={handleClick}>Patron</Button>
+        <Button type="primary" key={'our-priests'} onClick={handleClick}>Nasi księża</Button>
+        <Button type="primary" key={'living-rosary'} onClick={handleClick}>Koło Żywego Różańca</Button>
+        <Button type="primary" key={'gallery'} onClick={handleClick}>Galeria</Button>
+        <Button type="primary" key={'useful-links'} onClick={handleClick}>Przydatne linki</Button>
+      </div>
     </div>
   )
 }
