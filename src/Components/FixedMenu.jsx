@@ -12,18 +12,42 @@ const FixedMenu = () => {
    console.log('Menu', menuKey);
   }
 
+  const itemList = [
+    {
+      title: 'Ogłoszenia',
+      key: 'ogloszenia'
+    },
+    {
+      title: 'O Parafii',
+      key: 'o-parafii'
+    },
+    {
+      title: 'Patron',
+      key: 'patron'
+    },
+    {
+      title: 'Nasi księża',
+      key: 'ksieza'
+    },
+    {
+      title: 'Koło Żywego Różańca',
+      key: 'kolo-zywego-rozanca'
+    },
+    {
+      title: 'Galeria',
+      key: 'galeria'
+    },
+    {
+      title: 'Przydatne linki',
+      key: 'linki'
+    }
+  ]
+
   return(
     <div className='fixed-menu'>
       <div className='menu-list'>
         <img src={temporaryLogo} alt='logo' className='logo'/>
-        <Button type="primary" key={'main'} onClick={handleClick}>Strona główna</Button>
-        <Button type="primary" key={'news'} onClick={handleClick}>Ogłoszenia</Button>
-        <Button type="primary" key={'about'} onClick={handleClick}>O Parafii</Button>
-        <Button type="primary" key={'patron'} onClick={handleClick}>Patron</Button>
-        <Button type="primary" key={'our-priests'} onClick={handleClick}>Nasi księża</Button>
-        <Button type="primary" key={'living-rosary'} onClick={handleClick}>Koło Żywego Różańca</Button>
-        <Button type="primary" key={'gallery'} onClick={handleClick}>Galeria</Button>
-        <Button type="primary" key={'useful-links'} onClick={handleClick}>Przydatne linki</Button>
+        {itemList.map((item) => <Button type="primary" key={item.key} onClick={handleClick}>{item.title}</Button>)}
       </div>
     </div>
   )
