@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
   return(
-    <div className=''>
-      
+    <div className='footer'>
+      <span>Copyright © Parafia pw. bl. Honorata 2021</span>
     </div>
   )
 }

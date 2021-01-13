@@ -1,6 +1,7 @@
 .main-page {
   display: flex;
   flex-direction: column;
+  padding: 0 80px;
 }
 
 .main-page .section {
@@ -41,7 +42,7 @@
 
 .vertical-image {
   box-shadow: 3px 3px 8px gray;
-  width: 70%;
+  width: 60%;
 }
 
 .section.about {
