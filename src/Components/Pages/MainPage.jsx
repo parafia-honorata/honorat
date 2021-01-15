@@ -5,8 +5,8 @@ import pic1 from '../../Assets/pic1.jpg';
 import pic2 from '../../Assets/pic2.jpg';
 import pic3 from '../../Assets/pic3.jpg';
 import pic5 from '../../Assets/pic5.jpg';
-import pic7 from '../../Assets/pic7.jpg';
-import pic8 from '../../Assets/pic8.jpg';
+import honorat from '../../Assets/honorat.jpg';
+import mapa from '../../Assets/mapa.jpg';
 import './MainPage.css';
 
 const MainPage = () => {
@@ -67,7 +67,7 @@ const MainPage = () => {
       </div>
       <div className='section patron'>
         <div className='special'>
-          <Image src={pic7} preview={false} alt='Pic7' className='vertical-image' />
+          <Image src={honorat} preview={false} alt='Pic7' className='vertical-image' />
         </div>
         <div className='text'>
           <h2>Błogosławiony Honorat Koźmiński</h2>
@@ -93,7 +93,7 @@ const MainPage = () => {
       </div>
       <div className='section map'>
         <div className='special'>
-          <Image src={pic8} preview={false} alt='pic8' className='vertical-image' />
+          <Image src={mapa} preview={false} alt='mapa' className='vertical-image' />
         </div>
         <div className='text'>
           <h4>Marii Konopnickiej 11A</h4>
