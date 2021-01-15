@@ -8,6 +8,7 @@
 .icon-and-list {
   display: flex;
   background-color: transparent;
+
   align-items: flex-start;
 }
 
@@ -29,7 +30,9 @@
 .fixed-menu .ant-btn-primary {
   background-color: rgb(96, 32, 23 );
   border: none;
-  font-size: 16px;
+  font-size: 20px;
+  font-family: "Georgia", Helvetica, Arial, serif;
+  height: 50px;
 }
 
 .fixed-menu .ant-menu-horizontal > .ant-menu-item {
@@ -38,6 +41,7 @@
 
 .menu-list {
   padding-left: 200px;
-  flex: 10;
   background-color: rgb(96, 32, 23 );
+  display: flex;
+  justify-content: space-evenly;
 }
