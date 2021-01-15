@@ -9,21 +9,22 @@
 .menu-list {
   display: flex;
   height: 60%;
-  background-color: wheat;
-  align-items: flex-end;
+  background-color: transparent;
+  align-items: flex-start;
 }
 
 .pic-link {
-  flex: 0.3;
+  flex: 0.30;
 }
 
 .page .logo {
   width: 100%;
   height: auto;
+  background-color: rgb(96, 32, 23 );
 }
 
 .fixed-menu .ant-btn-primary {
-  background-color: rgb(255, 166, 0);
+  background-color: rgb(96, 32, 23 );
   border: none;
   font-size: 16px;
 }

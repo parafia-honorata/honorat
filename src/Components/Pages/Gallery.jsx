@@ -52,7 +52,10 @@ const Gallery = () => {
 
   return(
     <div className='gallery'>
-      {imageLists.map((image, index) => <Image src={image} key={index} width={200} alt='gallery-image' />)}
+      <div className='gallery-image-zone'>
+        {imageLists.map((image, index) => <Image src={image} key={index} width={200} alt='gallery-image' />)}
+      </div>
+      
     </div>
   )
 }
