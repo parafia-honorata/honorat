@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel, Image, Button } from 'antd';
+import Config from '../../Config'
 import pic1 from '../../Assets/pic1.jpg';
 import pic2 from '../../Assets/pic2.jpg';
 import pic3 from '../../Assets/pic3.jpg';
@@ -95,7 +96,11 @@ const MainPage = () => {
           <Image src={pic8} preview={false} alt='pic8' className='vertical-image' />
         </div>
         <div className='text'>
-          CO TO JEST?
+          <h4>Marii Konopnickiej 11A</h4>
+          <h4>42-506 Będzin</h4>
+          <a href={Config.googleMapLink} target="_blank" rel="noreferrer">
+            <Button type="primary">Zobacz na mapie</Button>
+          </a>
         </div>
       </div>
     </div>
