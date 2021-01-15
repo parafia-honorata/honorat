@@ -1,7 +1,7 @@
 import { Button } from 'antd';
 import React, {useState} from 'react';
 import './FixedMenu.css';
-import temporaryLogo from '../Assets/temporaryLogo.png';
+import temporaryLogo from '../Assets/LogoChurch.png';
 
 const FixedMenu = () => {
 
