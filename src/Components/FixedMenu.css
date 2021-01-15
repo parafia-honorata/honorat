@@ -13,8 +13,12 @@
   align-items: flex-end;
 }
 
+.pic-link {
+  flex: 0.3;
+}
+
 .page .logo {
-  width: 10%;
+  width: 100%;
   height: auto;
 }
 

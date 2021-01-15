@@ -2,6 +2,7 @@ import { Button } from 'antd';
 import React, {useState} from 'react';
 import './FixedMenu.css';
 import temporaryLogo from '../Assets/LogoChurch.png';
+import {Link} from 'react-router-dom';
 
 const FixedMenu = () => {
 
@@ -46,8 +47,8 @@ const FixedMenu = () => {
   return(
     <div className='fixed-menu'>
       <div className='menu-list'>
-        <img src={temporaryLogo} alt='logo' className='logo'/>
-        {itemList.map((item) => <Button type="primary" key={item.key} onClick={handleClick}>{item.title}</Button>)}
+        <Link className='pic-link' to='/'><img src={temporaryLogo} alt='logo' className='logo'/></Link>
+        {itemList.map((item) => <Link to={`/${item.key}`}><Button type="primary" key={item.key} onClick={handleClick}>{item.title}</Button></Link>)}
       </div>
     </div>
   )
