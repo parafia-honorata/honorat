@@ -45,12 +45,14 @@ const FixedMenu = () => {
   ]
 
   return(
-    <div className='fixed-menu'>
-      <div className='menu-list'>
-        <Link className='pic-link' to='/'><img src={temporaryLogo} alt='logo' className='logo'/></Link>
-        {itemList.map((item) => <Link to={`/${item.key}`}><Button type="primary" key={item.key} onClick={handleClick}>{item.title}</Button></Link>)}
+    <React.Fragment>
+      <Link className='pic-link' to='/'><img src={temporaryLogo} alt='logo' className='logo'/></Link>
+      <div className='fixed-menu'>
+        <div className='menu-list'>
+          {itemList.map((item) => <Link to={`/${item.key}`}><Button type="primary" key={item.key} onClick={handleClick}>{item.title}</Button></Link>)}
+        </div>
       </div>
-    </div>
+    </React.Fragment>
   )
 }
 

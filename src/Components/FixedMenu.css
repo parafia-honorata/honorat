@@ -1,26 +1,29 @@
 .fixed-menu {
-  padding: 0 5px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
 }
 
-.menu-list {
+.icon-and-list {
   display: flex;
-  height: 60%;
   background-color: transparent;
   align-items: flex-start;
 }
 
 .pic-link {
-  flex: 0.30;
+  position: fixed;
+  width: 200px;
+  height: auto;
+  z-index: 200;
+  border-radius: 10px;
 }
 
 .page .logo {
   width: 100%;
   height: auto;
   background-color: rgb(96, 32, 23 );
+  border-radius: 0 0 10px 0;
 }
 
 .fixed-menu .ant-btn-primary {
@@ -31,4 +34,10 @@
 
 .fixed-menu .ant-menu-horizontal > .ant-menu-item {
   vertical-align: baseline;
+}
+
+.menu-list {
+  padding-left: 200px;
+  flex: 10;
+  background-color: rgb(96, 32, 23 );
 }

@@ -2,7 +2,6 @@
 
 .page {
   font-family: "Libera", Helvetica, Arial, sans-serif;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
