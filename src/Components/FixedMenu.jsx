@@ -1,46 +1,53 @@
 import { Button } from 'antd';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './FixedMenu.css';
 import temporaryLogo from '../Assets/LogoChurch.png';
-import {Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 
 const FixedMenu = () => {
 
   const [menuKey, setMenuKey] = useState('main');
+  let location = useLocation();
+
+  useEffect(() => {
+    setMenuKey(location.pathname);
+  }, [location])
+
+
 
   const handleClick = (e) => {
    setMenuKey(e.key);
-   console.log('Menu', menuKey);
+   console.log('Menu', e, menuKey);
   }
 
   const itemList = [
     {
       title: 'Ogłoszenia',
-      key: 'ogloszenia'
+      key: '/ogloszenia'
     },
     {
       title: 'O Parafii',
-      key: 'o-parafii'
+      key: '/o-parafii'
     },
     {
       title: 'Patron',
-      key: 'patron'
+      key: '/patron'
     },
     {
       title: 'Nasi księża',
-      key: 'ksieza'
+      key: '/ksieza'
     },
     {
       title: 'Koło Żywego Różańca',
-      key: 'kolo-zywego-rozanca'
+      key: '/kolo-zywego-rozanca'
     },
     {
       title: 'Galeria',
-      key: 'galeria'
+      key: '/galeria'
     },
     {
       title: 'Przydatne linki',
-      key: 'linki'
+      key: '/linki'
     }
   ]
 
@@ -49,7 +56,7 @@ const FixedMenu = () => {
       <Link className='pic-link' to='/'><img src={temporaryLogo} alt='logo' className='logo'/></Link>
       <div className='fixed-menu'>
         <div className='menu-list'>
-          {itemList.map((item) => <Link to={`/${item.key}`}><Button type="primary" key={item.key} onClick={handleClick}>{item.title}</Button></Link>)}
+          {itemList.map((item) => <Link to={item.key}><Button type="primary" id={item.key} onClick={handleClick}>{item.title}</Button></Link>)}
         </div>
       </div>
     </React.Fragment>
