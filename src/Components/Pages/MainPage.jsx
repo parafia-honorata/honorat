@@ -1,10 +1,12 @@
 import React from 'react';
 import { Carousel, Image, Button } from 'antd';
+import {Link} from 'react-router-dom';
 import Config from '../../Config'
 import pic1 from '../../Assets/pic1.jpg';
 import pic2 from '../../Assets/pic2.jpg';
 import pic3 from '../../Assets/pic3.jpg';
 import pic5 from '../../Assets/pic5.jpg';
+import stockpic1 from '../../Assets/stockpic1.jpg';
 import honorat from '../../Assets/honorat.jpg';
 import mapa from '../../Assets/mapa.jpg';
 import './MainPage.css';
@@ -26,7 +28,7 @@ const MainPage = () => {
       </div>
       <div className='section newest'>
         <div className='special'>
-
+          <Image src={stockpic1} preview={false} alt='pic' className='vertical-image' />
         </div>
         <div className='text'>
           <p>
@@ -46,6 +48,9 @@ const MainPage = () => {
               <li>We wtorek 16:00 – 18:00</li>
             </ul>
           </p>
+          <Link to={'/ogloszenia'}>
+            <Button type="primary">Ogłoszenia</Button>
+          </Link>
         </div>
       </div>
       <div className='section about'>
@@ -63,6 +68,9 @@ const MainPage = () => {
             Choć ustanowienia parafii dokonał biskup częstochowski Stanisław Nowak, obecnie należy ona do Diecezji Sosnowieckiej.
             Biskup Adam Śmigielski dokonał jej uroczystej konsekracji 15 października 2000 r.
           </p>
+          <Link to={'/o-parafii'}>
+            <Button type="primary">Więcej o parafii</Button>
+          </Link>
         </div>
       </div>
       <div className='section patron'>
@@ -88,7 +96,9 @@ const MainPage = () => {
             oporu wobec rosyjskiej opresji. Był uznanym spowiednikiem, tytanem pracy i niestrudzonym organizatorem. Zmarł w 1916 r. w 
             opinii świętości.
           </p>
-          <Button type="primary">Więcej</Button>
+          <Link to={'/patron'}>
+            <Button type="primary">Więcej o patronie</Button>
+          </Link>
         </div>
       </div>
       <div className='section map'>

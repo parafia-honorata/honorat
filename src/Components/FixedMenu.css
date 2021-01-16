@@ -14,7 +14,7 @@
 
 .pic-link {
   position: fixed;
-  width: 200px;
+  width: 180px;
   height: auto;
   z-index: 200;
   border-radius: 10px;
@@ -40,7 +40,7 @@
 }
 
 .menu-list {
-  padding-left: 200px;
+  padding-left: 180px;
   background-color: rgb(96, 32, 23 );
   display: flex;
   justify-content: space-evenly;
