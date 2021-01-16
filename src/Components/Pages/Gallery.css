@@ -1,3 +1,9 @@
 .gallery {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery .ant-image {
+  width: 200px;
+  height: 200px;
 }
