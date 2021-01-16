@@ -12,9 +12,6 @@ import './MainPage.css';
 const MainPage = () => {
   return(
     <div className='main-page'>
-      <div className='section title'>
-        <h1>Parafia Rzymskokatolicka pw. bł. Honorata Kuźmińskiego w Będzinie-Grodźcu</h1>
-      </div>
       <div className='section most-important'>
         <div className='carousel'>
           <Carousel autoplay={true} effect={'fade'}>
@@ -23,6 +20,9 @@ const MainPage = () => {
             <Image src={pic3} preview={false} alt='Pic3' className='carousel-image' />
           </Carousel>
         </div>
+      </div>
+      <div className='section title'>
+        <h1>Parafia Rzymskokatolicka pw. bł. Honorata Kuźmińskiego w Będzinie-Grodźcu</h1>
       </div>
       <div className='section newest'>
         <div className='special'>

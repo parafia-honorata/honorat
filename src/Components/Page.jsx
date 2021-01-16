@@ -9,7 +9,6 @@ const Page = () => {
     <div className='page'>
       <FixedMenu/>
       <div className='flex-box'>
-        <div className='navbar-placeholder'/>
         <PageContent/>
         <Footer/>
       </div>
