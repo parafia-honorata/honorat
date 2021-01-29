@@ -24,7 +24,7 @@ const MainPage = () => {
         </div>
       </div>
       <div className='section title'>
-        <h1>Parafia Rzymskokatolicka pw. bł. Honorata Kuźmińskiego w Będzinie-Grodźcu</h1>
+        <h1>Parafia Rzymskokatolicka pw. bł. Honorata Koźmińskiego w Będzinie-Grodźcu</h1>
       </div>
       <div className='section newest'>
         <div className='special'>
@@ -45,7 +45,8 @@ const MainPage = () => {
             </ul>
             <h2>Kancelaria parafialna czynna</h2>
             <ul>
-              <li>We wtorek 16:00 – 18:00</li>
+              <li>W poniedziałek 18:10 – 19:00</li>
+              <li>W czwartek 18:10 – 19:00</li>
             </ul>
           </p>
           <Link to={'/ogloszenia'}>
