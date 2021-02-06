@@ -1,9 +1,24 @@
 .gallery {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
-.gallery .ant-image {
+
+.gallery-image-zone {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.ant-image {
+  margin: 10px;
   width: 200px;
-  height: 200px;
+  height: auto;
+}
+
+.ant-image img {
+  box-shadow: 3px 3px 8px gray;
+  cursor: pointer;
 }

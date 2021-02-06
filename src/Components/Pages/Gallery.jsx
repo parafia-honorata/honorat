@@ -52,6 +52,7 @@ const Gallery = () => {
 
   return(
     <div className='gallery'>
+      <h1>Galeria</h1>
       <div className='gallery-image-zone'>
         {imageLists.map((image, index) => <Image src={image} key={index} alt='gallery-image' />)}
       </div>
