@@ -18,3 +18,8 @@
   padding-top: 60px;
 }
 
+.sub-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

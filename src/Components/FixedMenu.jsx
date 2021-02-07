@@ -30,16 +30,8 @@ const FixedMenu = () => {
       key: '/o-parafii'
     },
     {
-      title: 'Patron',
-      key: '/patron'
-    },
-    {
       title: 'Nasi księża',
       key: '/ksieza'
-    },
-    {
-      title: 'Koło Żywego Różańca',
-      key: '/kolo-zywego-rozanca'
     },
     {
       title: 'Galeria',

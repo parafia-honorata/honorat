@@ -51,10 +51,10 @@ const Gallery = () => {
   ]
 
   return(
-    <div className='gallery'>
+    <div className='gallery sub-page'>
       <h1>Galeria</h1>
       <div className='gallery-image-zone'>
-        {imageLists.map((image, index) => <Image src={image} key={index} alt='gallery-image' />)}
+        {imageLists.map((image, index) => <div className='gallery-image'><Image src={image} key={index} alt='gallery-image' /></div>)}
       </div>
       
     </div>

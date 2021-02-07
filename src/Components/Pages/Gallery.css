@@ -1,9 +1,3 @@
-.gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 
 .gallery-image-zone {
   display: flex;
@@ -12,13 +6,13 @@
   align-items: center;
 }
 
-.ant-image {
+.gallery-image {
   margin: 10px;
   width: 200px;
   height: auto;
 }
 
-.ant-image img {
+.gallery-image .ant-image img {
   box-shadow: 3px 3px 8px gray;
   cursor: pointer;
 }

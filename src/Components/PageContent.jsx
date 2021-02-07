@@ -5,6 +5,7 @@ import News from './Pages/News';
 import About from './Pages/About';
 import Gallery from './Pages/Gallery';
 import './PageContent.css';
+import OurPriests from './Pages/OurPriests';
 
 const PageContent = () => {
   return(
@@ -12,9 +13,7 @@ const PageContent = () => {
       <Switch>
         <Route path='/ogloszenia' component={News}/>
         <Route path='/o-parafii' component={About} />
-        <Route path='/patron' />
-        <Route path='/ksieza' />
-        <Route path='/kolo-zywego-rozanca' />
+        <Route path='/ksieza' component={OurPriests}/>
         <Route path='/galeria' component={Gallery} />
         <Route path='/linki' />
         <Route path='/' component={MainPage}/>

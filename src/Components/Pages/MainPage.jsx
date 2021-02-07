@@ -97,9 +97,6 @@ const MainPage = () => {
             oporu wobec rosyjskiej opresji. Był uznanym spowiednikiem, tytanem pracy i niestrudzonym organizatorem. Zmarł w 1916 r. w 
             opinii świętości.
           </p>
-          <Link to={'/patron'}>
-            <Button type="primary">Więcej o patronie</Button>
-          </Link>
         </div>
       </div>
       <div className='section map'>
