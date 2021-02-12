@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel, Image, Button } from 'antd';
 import {Link} from 'react-router-dom';
-import Config from '../../Config'
+import Config from '../../Config';
 import pic1 from '../../Assets/pic1.jpg';
 import pic2 from '../../Assets/pic2.jpg';
 import pic3 from '../../Assets/pic3.jpg';
@@ -68,6 +68,10 @@ const MainPage = () => {
           <p>
             Choć ustanowienia parafii dokonał biskup częstochowski Stanisław Nowak, obecnie należy ona do Diecezji Sosnowieckiej.
             Biskup Adam Śmigielski dokonał jej uroczystej konsekracji 15 października 2000 r.
+          </p>
+          <p>
+            W parafii działa Koło Żywego Różańca. W każdą środę zmawiana jest Nowenna do Matki Bożej Nieustającej pomocy, a w piątki
+            Koronka do Bożego Miłosierdzia.
           </p>
           <Link to={'/o-parafii'}>
             <Button type="primary">Więcej o parafii</Button>
