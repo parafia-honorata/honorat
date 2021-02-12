@@ -1,26 +1,43 @@
 import React from 'react';
 import { Carousel, Image, Button } from 'antd';
 import {Link} from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive'
+
 import Config from '../../Config';
 import pic1 from '../../Assets/pic1.jpg';
 import pic2 from '../../Assets/pic2.jpg';
 import pic3 from '../../Assets/pic3.jpg';
 import pic5 from '../../Assets/pic5.jpg';
+import pic6 from '../../Assets/pic6.jpg';
+import pic10 from '../../Assets/pic10.jpg';
 import stockpic1 from '../../Assets/stockpic1.jpg';
 import honorat from '../../Assets/honorat.jpg';
 import mapa from '../../Assets/mapa.jpg';
 import './MainPage.css';
 
+
 const MainPage = () => {
+
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  
   return(
-    <div className='main-page'>
+    <div className='main-page sub-page'>
       <div className='section most-important'>
         <div className='carousel'>
-          <Carousel autoplay={true} effect={'fade'}>
-            <Image src={pic1} preview={false} alt='Pic1' className='carousel-image' />
-            <Image src={pic2} preview={false} alt='Pic2' className='carousel-image' />
-            <Image src={pic3} preview={false} alt='Pic3' className='carousel-image' />
-          </Carousel>
+          {isMobile ?
+            <Carousel autoplay={true} effect={'fade'}>
+              <Image src={pic5} preview={false} alt='Pic1' className='carousel-image' />
+              <Image src={pic6} preview={false} alt='Pic2' className='carousel-image' />
+              <Image src={pic10} preview={false} alt='Pic3' className='carousel-image' />
+            </Carousel>
+            : 
+            <Carousel autoplay={true} effect={'fade'}>
+              <Image src={pic1} preview={false} alt='Pic1' className='carousel-image' />
+              <Image src={pic2} preview={false} alt='Pic2' className='carousel-image' />
+              <Image src={pic3} preview={false} alt='Pic3' className='carousel-image' />
+            </Carousel>
+          }
+
         </div>
       </div>
       <div className='section title'>
@@ -54,7 +71,7 @@ const MainPage = () => {
           </Link>
         </div>
       </div>
-      <div className='section about'>
+      <div className='section about reverted'>
         <div className='special'>
           <Image src={pic5} preview={false} alt='pic5' className='vertical-image' />
         </div>
@@ -103,7 +120,7 @@ const MainPage = () => {
           </p>
         </div>
       </div>
-      <div className='section map'>
+      <div className='section map reverted'>
         <div className='special'>
           <Image src={mapa} preview={false} alt='mapa' className='vertical-image' />
         </div>

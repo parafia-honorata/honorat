@@ -23,3 +23,45 @@
   flex-direction: column;
   align-items: center;
 }
+
+.section {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.text {
+  padding: 20px;
+  flex: 1;
+}
+
+.special {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.reverted {
+  flex-direction: row-reverse;
+}
+
+.reverted .special {
+  justify-content: flex-end;
+}
+
+.vertical-image {
+  box-shadow: 3px 3px 8px gray;
+  width: 60%;
+} 
+
+
+
+@media only screen and (max-width: 767px) {
+  .section {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section .special {
+    justify-content: center;
+  }
+}

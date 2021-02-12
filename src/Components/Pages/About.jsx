@@ -10,7 +10,7 @@ const About = () => {
   return(
     <div className='about-page sub-page'>
         <h1>O parafii</h1>
-        <div className='section history'>
+        <div className='section history reverted'>
           <div className='special'>
             <Image src={pic21} preview={false} alt='pic' className='vertical-image' />
           </div>

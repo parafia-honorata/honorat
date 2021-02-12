@@ -16,7 +16,7 @@ const OurPriests = () => {
             <h2>Ksiądz Marek Zaręba</h2>
         </div>
       </div>
-      <div className='section ks-janusz'>
+      <div className='section ks-janusz reverted'>
         <div className='special'>
           <Image src={pic21} preview={false} alt='pic' className='vertical-image' />
         </div>

@@ -1,17 +1,6 @@
-.main-page {
-  display: flex;
-  flex-direction: column;
-}
 
-.main-page .section {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 50px;
-}
-
-.text {
-  padding: 20px;
-  flex: 1;
+.section.most-important {
+  width: 100%;
 }
 
 .section.title {
@@ -27,11 +16,6 @@
   flex: 1;
 }
 
-.special {
-  width: 60%;
-  flex: 1;
-}
-
 .ant-carousel {
   flex: 1;
 }
@@ -40,17 +24,8 @@
   box-shadow: 3px 3px 8px gray;
 }
 
-.vertical-image {
-  box-shadow: 3px 3px 8px gray;
-  width: 60%;
-}
 
-.section.about {
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  flex-direction: row-reverse;
-}
+
 
 .about .special {
   display: flex;
@@ -61,10 +36,17 @@
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  flex-direction: row-reverse;
 }
 
 .map .special {
   display: flex;
   justify-content: flex-end;
+}
+
+@media only screen and (max-width: 767px) {
+  .carousel {
+    padding: 0 40px;
+    width: 10%;
+    flex: 0.1;
+  }
 }
