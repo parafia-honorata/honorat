@@ -44,9 +44,12 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .section.most-important {
+    align-items: center;
+  }
   .carousel {
     padding: 0 40px;
-    width: 10%;
+    width: 70%;
     flex: 0.1;
   }
 }

@@ -6,3 +6,10 @@
   max-width: 1170px;
   z-index: 2;
 }
+
+@media only screen and (max-width: 767px) {
+
+  .page-content {
+    max-width: 100vw;
+  }
+}
