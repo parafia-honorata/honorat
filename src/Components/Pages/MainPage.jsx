@@ -22,6 +22,9 @@ const MainPage = () => {
   
   return(
     <div className='main-page sub-page'>
+      <div className='section card title'>
+        <h1>Parafia Rzymskokatolicka pw. bł. Honorata Koźmińskiego w Będzinie-Grodźcu</h1>
+      </div>
       <div className='section most-important'>
         <div className='carousel'>
           {isMobile ?
@@ -40,10 +43,7 @@ const MainPage = () => {
 
         </div>
       </div>
-      <div className='section title'>
-        <h1>Parafia Rzymskokatolicka pw. bł. Honorata Koźmińskiego w Będzinie-Grodźcu</h1>
-      </div>
-      <div className='section newest'>
+      <div className='section card newest'>
         <div className='special'>
           <Image src={stockpic1} preview={false} alt='pic' className='vertical-image' />
         </div>
@@ -71,7 +71,7 @@ const MainPage = () => {
           </Link>
         </div>
       </div>
-      <div className='section about reverted'>
+      <div className='section card about reverted'>
         <div className='special'>
           <Image src={pic5} preview={false} alt='pic5' className='vertical-image' />
         </div>
@@ -95,7 +95,7 @@ const MainPage = () => {
           </Link>
         </div>
       </div>
-      <div className='section patron'>
+      <div className='section card patron'>
         <div className='special'>
           <Image src={honorat} preview={false} alt='Pic7' className='vertical-image' />
         </div>
@@ -120,7 +120,7 @@ const MainPage = () => {
           </p>
         </div>
       </div>
-      <div className='section map reverted'>
+      <div className='section card map reverted'>
         <div className='special'>
           <Image src={mapa} preview={false} alt='mapa' className='vertical-image' />
         </div>

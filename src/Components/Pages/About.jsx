@@ -10,7 +10,7 @@ const About = () => {
   return(
     <div className='about-page sub-page'>
         <h1>O parafii</h1>
-        <div className='section history reverted'>
+        <div className='section card history reverted'>
           <div className='special'>
             <Image src={pic21} preview={false} alt='pic' className='vertical-image' />
           </div>
@@ -38,7 +38,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className='section organisation'>
+        <div className='section card organisation'>
           <div className='special'>
             <Image src={wikipic} preview={false} alt='pic' className='vertical-image' />
           </div>

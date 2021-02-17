@@ -30,6 +30,13 @@
   margin-bottom: 50px;
 }
 
+.card {
+  padding: 5px;
+  background-color: rgb(250, 200, 200);
+  border-radius: 3px;
+  box-shadow: 1px 1px 4px gray;
+}
+
 .text {
   padding: 20px;
   flex: 1;
@@ -54,14 +61,27 @@
   width: 60%;
 } 
 
+.sub-page h1 {
+  text-align: center;
+}
+
 
 
 @media only screen and (max-width: 767px) {
   .section {
     flex-direction: column;
     justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px; 
   }
   .section .special {
     justify-content: center;
   }
+  .sub-page h1 {
+    font-size: 20px;
+  }
+  .vertical-image {
+    box-shadow: 3px 3px 8px gray;
+    width: 80%;
+  } 
 }

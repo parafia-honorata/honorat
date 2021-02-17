@@ -8,7 +8,7 @@ const OurPriests = () => {
   return(
     <div className='our-priests sub-page'>
       <h1>Nasi Księża</h1>
-      <div className='section ks-marek'>
+      <div className='section card ks-marek'>
         <div className='special'>
           <Image src={stockpic2} preview={false} alt='pic' className='vertical-image' />
         </div>
@@ -16,7 +16,7 @@ const OurPriests = () => {
             <h2>Ksiądz Marek Zaręba</h2>
         </div>
       </div>
-      <div className='section ks-janusz reverted'>
+      <div className='section card ks-janusz reverted'>
         <div className='special'>
           <Image src={pic21} preview={false} alt='pic' className='vertical-image' />
         </div>
@@ -24,7 +24,7 @@ const OurPriests = () => {
           <h2>Ksiądz Janusz Pieśniewski</h2>
         </div>
       </div>
-      <div className='section ks-past'>
+      <div className='section card ks-past'>
         <div className='special'>
           <Image src={pic21} preview={false} alt='pic' className='vertical-image' />
         </div>
