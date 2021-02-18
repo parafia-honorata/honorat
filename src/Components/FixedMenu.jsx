@@ -1,7 +1,8 @@
 import { Button, Drawer } from 'antd';
 import React, {useEffect, useState} from 'react';
 import './FixedMenu.css';
-import temporaryLogo from '../Assets/LogoChurch.png';
+import DesktopLogo from '../Assets/LogoChurch.png';
+import MobileLogo from '../Assets/LogoChurchLong.png';
 import {Link, useLocation} from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive'
 import {MenuOutlined} from '@ant-design/icons';
@@ -9,12 +10,12 @@ import {MenuOutlined} from '@ant-design/icons';
 const FixedMenu = () => {
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
-  const [menuKey, setMenuKey] = useState('main');
+  // const [menuKey, setMenuKey] = useState('main');
   const [drawerVisible, setDrawerVisible] = useState(false);
   let location = useLocation();
 
   useEffect(() => {
-    setMenuKey(location.pathname);
+    // setMenuKey(location.pathname);
   }, [location])
 
   const onOpen = () => {
@@ -26,8 +27,10 @@ const FixedMenu = () => {
   }
 
   const handleClick = (e) => {
-   setMenuKey(e.key);
-   console.log('Menu', e, menuKey);
+   // setMenuKey(e.key);
+   if (isMobile) {
+    setDrawerVisible(false);
+   }
   }
 
   const itemList = [
@@ -55,7 +58,11 @@ const FixedMenu = () => {
 
   return(
     <React.Fragment>
-      <Link className='pic-link' to='/'><img src={temporaryLogo} alt='logo' className='logo'/></Link>
+      {isMobile ? 
+        <Link className='pic-link' to='/'><img src={MobileLogo} alt='logo' className='logo'/></Link>
+        :
+        <Link className='pic-link' to='/'><img src={DesktopLogo} alt='logo' className='logo'/></Link>
+      }
       <div className='fixed-menu'>
         {isMobile ? 
           <div className='menu-list'>
