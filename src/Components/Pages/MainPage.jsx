@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Carousel, Image, Button } from 'antd';
 import {Link} from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive'
@@ -17,6 +17,10 @@ import './MainPage.css';
 
 
 const MainPage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
   

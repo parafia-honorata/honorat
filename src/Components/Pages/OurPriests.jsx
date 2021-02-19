@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './OurPriests.css';
 import {Image} from 'antd';
 import stockpic2 from '../../Assets/stock-pic2.jpg';
 import pic21 from '../../Assets/pic21.jpg';
 
 const OurPriests = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return(
     <div className='our-priests sub-page'>
       <h1>Nasi Księża</h1>

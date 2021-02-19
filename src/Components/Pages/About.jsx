@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './About.css';
 import {Image} from 'antd';
 import wikipic from '../../Assets/wikipic.jpg';
@@ -7,6 +7,11 @@ import Config from '../../Config';
 import { Button } from 'antd';
 
 const About = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return(
     <div className='about-page sub-page'>
         <h1>O parafii</h1>

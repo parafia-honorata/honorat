@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Image } from 'antd';
 import './Gallery.css';
 
@@ -25,6 +25,10 @@ import pic20 from '../../Assets/pic20.jpg';
 import pic21 from '../../Assets/pic21.jpg';
 
 const Gallery = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const imageLists = [
     pic1, 
