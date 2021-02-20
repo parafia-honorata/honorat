@@ -2,9 +2,9 @@ import Config from "./Config";
 
 class BlogService {
 
-  async getHowToBetItems() {
+  async getNewsItem() {
     try {
-      const response = await fetch(`${Config.blogger.endpoint}/v3/blogs/${Config.blogger.howToBetId}/posts?key=${Config.blogger.apiKey}`, {
+      const response = await fetch(`https://www.googleapis.com/blogger/v3/blogs/${Config.blogger.blogKey}/posts/${Config.blogger.newsPostKey}?fetchBody=true&fetchImages=false&key=${Config.blogger.apiKey}`, {
         method: 'get',
         headers: new Headers({
           Accept: 'application/json',
@@ -17,9 +17,9 @@ class BlogService {
     }
   }
 
-  async getAllBlogPosts() {
+  async getIntensionsItem() {
     try {
-      const response = await fetch(`${Config.blogger.endpoint}/v3/blogs/${Config.blogger.exbetIoId}/posts?maxResults=500&key=${Config.blogger.apiKey}`, {
+      const response = await fetch(`https://www.googleapis.com/blogger/v3/blogs/${Config.blogger.blogKey}/posts/${Config.blogger.intensionsPostKey}?fetchBody=true&fetchImages=false&key=${Config.blogger.apiKey}`, {
         method: 'get',
         headers: new Headers({
           Accept: 'application/json',
@@ -30,25 +30,6 @@ class BlogService {
     } catch (error) {
       return Promise.reject(error);
     }
-  }
-
-  static getBlogPostsByLabels(labels = '') {
-    return new Promise(async (resolve, reject) => {
-      fetch(`${Config.blogger.endpoint}/v3/blogs/${Config.blogger.exbetIoId}/posts?maxResults=500&labels=${labels}&key=${Config.blogger.apiKey}`, {
-        method: 'get',
-        headers: new Headers({
-          Accept: 'application/json',
-          'Content-Type': 'application/json'
-        })
-      }).then((response) => {
-        if (!response.ok) {
-          reject(response.statusText);
-        }
-        resolve(response.json());
-      }).catch((error) => {
-        reject(error);
-      });
-    });
   }
 
   handleResponse(response) {

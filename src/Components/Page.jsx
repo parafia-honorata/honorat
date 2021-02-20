@@ -5,11 +5,12 @@ import PageContent from './PageContent';
 import './Page.css';
 
 const Page = () => {
+
   return(
     <div className='page'>
       <FixedMenu/>
       <div className='flex-box'>
-        <PageContent/>
+        <PageContent />
         <Footer/>
       </div>
     </div>

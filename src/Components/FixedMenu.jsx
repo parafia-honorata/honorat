@@ -39,6 +39,10 @@ const FixedMenu = () => {
       key: '/ogloszenia'
     },
     {
+      title: 'Intencje',
+      key: '/intencje'
+    },
+    {
       title: 'O Parafii',
       key: '/o-parafii'
     },

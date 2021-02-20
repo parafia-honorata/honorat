@@ -3,7 +3,7 @@ import './News.css';
 import BlogService from '../../BlogService';
 import ReactHtmlParser from "react-html-parser";
 
-const News = () => {
+const Intensions = () => {
 
   const [blogPost, setBlogPost] = useState(null);
 
@@ -13,7 +13,7 @@ const News = () => {
   }, []);
 
   const getBlogPost = async () => {
-    const blogItem = await BlogService.getNewsItem();
+    const blogItem = await BlogService.getIntensionsItem();
     setBlogPost(blogItem);
   }
 
@@ -30,4 +30,4 @@ const News = () => {
   )
 }
 
-export default News;
+export default Intensions;

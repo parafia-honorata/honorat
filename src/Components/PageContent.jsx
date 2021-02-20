@@ -6,8 +6,11 @@ import About from './Pages/About';
 import Gallery from './Pages/Gallery';
 import './PageContent.css';
 import OurPriests from './Pages/OurPriests';
+import Intensions from './Pages/Intensions';
+import Links from './Pages/Links';
 
 const PageContent = () => {
+
   return(
     <div className='page-content'>
       <Switch>
@@ -15,8 +18,9 @@ const PageContent = () => {
         <Route path='/o-parafii' component={About} />
         <Route path='/ksieza' component={OurPriests}/>
         <Route path='/galeria' component={Gallery} />
-        <Route path='/linki' />
-        <Route path='/' component={MainPage}/>
+        <Route path='/linki' component={Links} />
+        <Route path='/intencje' component={Intensions} />
+        <Route path='/' component={MainPage} />
       </Switch>
 
     </div>
