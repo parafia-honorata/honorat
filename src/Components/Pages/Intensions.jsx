@@ -1,4 +1,6 @@
 import React, {useEffect, useState} from 'react';
+import {Image} from 'antd';
+import stockpic2 from '../../Assets/stock-pic2.jpg';
 import './News.css';
 import BlogService from '../../BlogService';
 import ReactHtmlParser from "react-html-parser";
@@ -20,12 +22,17 @@ const Intensions = () => {
   console.log('BLOG POST', blogPost);
 
   return(
-    <div className='news sub-page'>
-      <div className='section card blog'>
-        {blogPost && blogPost.content &&
-          ReactHtmlParser(blogPost.content)
-        }
-      </div>
+    <div className='intensions sub-page'>
+      <div className='section card organisation'>
+          <div className='special'>
+            <Image src={stockpic2} preview={false} alt='pic' className='vertical-image' />
+          </div>
+          <div className='text'>
+            {blogPost && blogPost.content &&
+              ReactHtmlParser(blogPost.content)
+            }
+          </div>
+        </div>
     </div>
   )
 }

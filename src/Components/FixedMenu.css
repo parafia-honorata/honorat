@@ -14,7 +14,7 @@
 }
 
 .page .logo {
-  width: 100%;
+  width: 80%;
   height: auto;
   background-color: rgb(96, 32, 23 );
   border-radius: 0 0 10px 0;
@@ -88,6 +88,14 @@
   }
   .ant-drawer .ant-drawer-title {
     color: white;
+  }
+
+  .ant-drawer-body .ant-btn-primary {
+    background-color: rgb(96, 32, 23 );
+    border: none;
+    font-size: 20px;
+    font-family: "Georgia", Helvetica, Arial, serif;
+    height: 50px;
   }
 
 }

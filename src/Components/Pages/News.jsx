@@ -21,7 +21,7 @@ const News = () => {
 
   return(
     <div className='news sub-page'>
-      <div className='section card blog'>
+      <div className='card blog'>
         {blogPost && blogPost.content &&
           ReactHtmlParser(blogPost.content)
         }

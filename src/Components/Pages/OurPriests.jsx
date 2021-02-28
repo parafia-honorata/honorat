@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react';
 import './OurPriests.css';
 import {Image} from 'antd';
-import stockpic2 from '../../Assets/stock-pic2.jpg';
+import priestpic1 from '../../Assets/priestpic1.jpg';
+import priestpic2 from '../../Assets/priestpic2.jpg';
 import pic21 from '../../Assets/pic21.jpg';
 
 const OurPriests = () => {
@@ -15,7 +16,7 @@ const OurPriests = () => {
       <h1>Nasi Księża</h1>
       <div className='section card ks-marek'>
         <div className='special'>
-          <Image src={stockpic2} preview={false} alt='pic' className='vertical-image' />
+          <Image src={priestpic1} preview={false} alt='pic' className='vertical-image' />
         </div>
         <div className='text'>
             <h2>Ksiądz Marek Zaręba</h2>
@@ -23,7 +24,7 @@ const OurPriests = () => {
       </div>
       <div className='section card ks-janusz reverted'>
         <div className='special'>
-          <Image src={pic21} preview={false} alt='pic' className='vertical-image' />
+          <Image src={priestpic2} preview={false} alt='pic' className='vertical-image' />
         </div>
         <div className='text'>
           <h2>Ksiądz Janusz Pieśniewski</h2>
