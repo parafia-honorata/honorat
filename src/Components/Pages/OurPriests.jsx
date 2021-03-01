@@ -41,6 +41,16 @@ const OurPriests = () => {
             <li>ks. Andrzej Gliszta</li>
             <li>ks. Czesław Mielczarek</li>
           </ul>
+          <h2>Byli wikariusze</h2>
+          <ul>
+            <li>ks. Krzysztof Słomian</li>
+            <li>ks. Mariusz Smętek</li>
+            <li>ks. Dariusz Grojec</li>
+            <li>ks. Tomasz Kaczur</li>
+            <li>ks. Andrzej Uliniarz</li>
+            <li>ks. Gerard Małodobry</li>
+            <li>ks. Władysław Barcicki</li>
+          </ul>
         </div>
       </div>
     </div>

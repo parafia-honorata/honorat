@@ -129,8 +129,10 @@ const MainPage = () => {
           <Image src={mapa} preview={false} alt='mapa' className='vertical-image' />
         </div>
         <div className='text'>
-          <h4>Marii Konopnickiej 11A</h4>
-          <h4>42-506 Będzin</h4>
+          <h3>Marii Konopnickiej 11A</h3>
+          <h3>42-506 Będzin</h3>
+          <h3>Tel: 690-649-750</h3>
+          <h3>Email: parafiahonorat@gmail.com</h3>
           <a href={Config.googleMapLink} target="_blank" rel="noreferrer">
             <Button type="primary">Zobacz na mapie</Button>
           </a>
