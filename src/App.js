@@ -1,12 +1,12 @@
 import './App.css';
 import Page from './Components/Page'
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Page/>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
