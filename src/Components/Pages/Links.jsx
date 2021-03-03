@@ -24,9 +24,9 @@ const Links = () => {
               <li><a href='https://www.wiara.pl/' rel='noreferrer' target='_blank'>Wiara.pl</a></li>
               <li><a href='http://modlitwa.pl/' rel='noreferrer' target='_blank'>Modlitwa.pl</a></li>
               <li><a href='https://www.katolik.pl/?nom=1' rel='noreferrer' target='_blank'>Katolik.pl</a></li>
-              <li><a href='https://www.teologia.pl/' rel='noreferrer' target='_blank'>Teologia.pls</a></li>
+              <li><a href='https://www.teologia.pl/' rel='noreferrer' target='_blank'>Teologia.pl</a></li>
               <li><a href='https://opoka.org.pl/' rel='noreferrer' target='_blank'>Opoka.org.pl</a></li>
-              <li><a href='https://niezbednik.niedziela.pl/' rel='noreferrer' target='_blank'>Niezbędzik Niedzieli</a></li>
+              <li><a href='https://niezbednik.niedziela.pl/' rel='noreferrer' target='_blank'>Niezbędnik Niedzieli</a></li>
             </ul>
           </div>
         </div>
