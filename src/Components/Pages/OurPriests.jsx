@@ -20,6 +20,11 @@ const OurPriests = () => {
         </div>
         <div className='text'>
             <h2>Ksiądz Marek Zaręba</h2>
+            <h4>O sobie:</h4>
+            <p>
+              Święcenia kapłańskie przyjąłem w 1991r w Częstochowie. Od święceń do dziś pełniłem posługę duszpasterską kolejno w Polsce, Zambii, 
+              ponownie w Polsce, krótki czas w Austrii i aktualnie w par. pw. bł. Honorata Koźmińskiego w Będzinie-Grodźcu.
+            </p>
         </div>
       </div>
       <div className='section card ks-janusz reverted'>
