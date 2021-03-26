@@ -10,6 +10,14 @@
   font-family: "Georgia", Helvetica, Arial, serif;
 }
 
+.section.announcement {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: "Georgia", Helvetica, Arial, serif;
+  flex-direction: column;
+}
+
 .carousel {
   padding: 0 40px;
   width: 100%;

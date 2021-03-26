@@ -80,6 +80,10 @@
   .sub-page h1 {
     font-size: 20px;
   }
+  .sub-page h2 {
+    font-size: 16px;
+    text-align: center;
+  }
   .vertical-image {
     box-shadow: 3px 3px 8px gray;
     width: 80%;

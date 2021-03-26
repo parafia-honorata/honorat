@@ -19,12 +19,13 @@ const OurPriests = () => {
           <Image src={priestpic1} preview={false} alt='pic' className='vertical-image' />
         </div>
         <div className='text'>
-            <h2>Ksiądz Marek Zaręba</h2>
+            <h2>Ksiądz Administator Marek Zaręba</h2>
             <h4>O sobie:</h4>
             <p>
               Święcenia kapłańskie przyjąłem w 1991r w Częstochowie. Od święceń do dziś pełniłem posługę duszpasterską kolejno w Polsce, Zambii, 
               ponownie w Polsce, krótki czas w Austrii i aktualnie w par. pw. bł. Honorata Koźmińskiego w Będzinie-Grodźcu.
             </p>
+            <h3>Tel: 690-649-750</h3>
         </div>
       </div>
       <div className='section card ks-janusz reverted'>
@@ -32,7 +33,8 @@ const OurPriests = () => {
           <Image src={priestpic2} preview={false} alt='pic' className='vertical-image' />
         </div>
         <div className='text'>
-          <h2>Ksiądz Janusz Pieśniewski</h2>
+          <h2>Ksiądz Wikariusz Janusz Pieśniewski</h2>
+          <h3>Tel: 503-605-330</h3>
         </div>
       </div>
       <div className='section card ks-past'>
