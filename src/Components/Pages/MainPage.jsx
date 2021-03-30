@@ -29,10 +29,6 @@ const MainPage = () => {
       <div className='section card title'>
         <h1>Parafia Rzymskokatolicka pw. bł. Honorata Koźmińskiego w Będzinie-Grodźcu</h1>
       </div>
-      <div className='section card announcement'>
-        <h1>Rekolekcje Wielkopostne 28.03 – 30.03</h1>
-        <h2>W niedzielę 28.03: 8:00, 16:30 – nauka ogólna, 10:00 – nauka dla młodziezy, 11:30 – nauka dla dzieci </h2>
-      </div>
       <div className='section most-important'>
         <div className='carousel'>
           {isMobile ?
