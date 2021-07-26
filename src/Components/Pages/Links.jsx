@@ -27,6 +27,7 @@ const Links = () => {
               <li><a href='https://www.teologia.pl/' rel='noreferrer' target='_blank'>Teologia.pl</a></li>
               <li><a href='https://opoka.org.pl/' rel='noreferrer' target='_blank'>Opoka.org.pl</a></li>
               <li><a href='https://niezbednik.niedziela.pl/' rel='noreferrer' target='_blank'>Niezbędnik Niedzieli</a></li>
+              <li><a href='https://al-anon.org.pl/informacje-dla-sluzby/' rel='noreferrer' target='_blank'>Grupy Rodzinne Al-Anon</a></li>
             </ul>
           </div>
         </div>
