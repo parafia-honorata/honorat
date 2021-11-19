@@ -29,6 +29,13 @@ const MainPage = () => {
       <div className='section card title'>
         <h1>Parafia Rzymskokatolicka pw. bł. Honorata Koźmińskiego w Będzinie-Grodźcu</h1>
       </div>
+      <div className='section card announcement'>
+        <h1>Rekolekcje Adwentowe 28.11 – 30.11</h1>
+        <h3>W niedzielę 28.11 – 8:00, 16:30 nauki ogólne; 10:00 nauki dla młodzieży; 11:30 nauki dla dzieci</h3>
+        <h3>29.11 i 30.11 nauka z Mszą Świętą o 9:00 i 17:30</h3>
+        <h3>Spowiedź swięta we wtorek 30.11 o godzinach 8:30 i 17:00</h3>
+        <h3>Rekolekcje poprawadzi ksiądz Artur Pęksa</h3>
+      </div>
       <div className='section most-important'>
         <div className='carousel'>
           {isMobile ?

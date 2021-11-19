@@ -23,7 +23,7 @@ const OurPriests = () => {
               <Image src={priestpic1} preview={false} alt='pic' className='vertical-image' />
             </div>
             <div className='text'>
-              <h2>Ksiądz Administator Marek Zaręba</h2>
+              <h2>Ksiądz Proboszcz Marek Zaręba</h2>
               <h3>Tel: 690-649-750</h3>
             </div>
           </div>
@@ -41,7 +41,7 @@ const OurPriests = () => {
           <div className='section card priests'>
             <div>
               <Image src={priestpic1} preview={false} alt='pic' className='vertical-image' />
-              <h2>Ksiądz Administator Marek Zaręba</h2>
+              <h2>Ksiądz Proboszcz Marek Zaręba</h2>
               <h3>Tel: 690-649-750</h3>
             </div>
             <div>
