@@ -22,6 +22,10 @@ const News = () => {
   return(
     <div className='news sub-page'>
       <div className='card blog'>
+        <p>Zapraszamy do pobrania i zapoznania się z formularzem XVI Zwyczajnego Zgromadzenia Ogólnego Synodu Biskupów. Uwagi o jego wypełnianiu znajdują się we wstępie.</p>
+        <a target="_blank" rel='noreferrer' href="https://drive.google.com/file/d/1HKYV4FRSWZfcFGr9AD5dFK0IaXZ_0IdT/view?usp=sharing">Formularz synodalny</a>
+      </div>
+      <div className='card blog'>
         {blogPost && blogPost.content &&
           ReactHtmlParser(blogPost.content)
         }
