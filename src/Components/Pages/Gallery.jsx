@@ -57,8 +57,11 @@ const Gallery = () => {
   return(
     <div className='gallery sub-page'>
       <h1>Galeria</h1>
-      <div className='gallery-image-zone card'>
-        {imageLists.map((image, index) => <div className='gallery-image'><Image src={image} key={index} alt='gallery-image' /></div>)}
+      <div className='card'>
+        <h1><a href='https://drive.google.com/drive/folders/1s6g6oZ2K5BW_3otAI-SUd1wNBGV6xYgc?usp=sharing' target="_blank" rel="noreferrer">Pozostałe zdjęcia</a></h1>
+        <div className='gallery-image-zone'>
+          {imageLists.map((image, index) => <div className='gallery-image'><Image src={image} key={index} alt='gallery-image' /></div>)}
+        </div>
       </div>
       
     </div>
