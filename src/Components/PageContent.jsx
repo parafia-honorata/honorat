@@ -8,6 +8,7 @@ import './PageContent.css';
 import OurPriests from './Pages/OurPriests';
 import Intensions from './Pages/Intensions';
 import Links from './Pages/Links';
+import Retreat from "./Pages/Retreat";
 
 const PageContent = () => {
 
@@ -20,6 +21,7 @@ const PageContent = () => {
         <Route path='/galeria' component={Gallery} />
         <Route path='/linki' component={Links} />
         <Route path='/intencje' component={Intensions} />
+        <Route path='/rekolekcje' component={Retreat} />
         <Route path='/' component={MainPage} />
       </Switch>
 

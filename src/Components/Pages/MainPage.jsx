@@ -29,6 +29,12 @@ const MainPage = () => {
       <div className='section card title'>
         <h1>Parafia Rzymskokatolicka pw. bł. Honorata Koźmińskiego w Będzinie-Grodźcu</h1>
       </div>
+      <div className='section card announcement'>
+        <h1>Rekolekcje Wielkopostne 20.03 – 23.03</h1>
+        <Link to={'/rekolekcje'}>
+            <Button type="primary">Więcej</Button>
+        </Link>
+      </div>
       <div className='section most-important'>
         <div className='carousel'>
           {isMobile ?
