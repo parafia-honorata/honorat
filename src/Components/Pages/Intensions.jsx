@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import './News.css';
+import './Intensions.css';
 import BlogService from '../../BlogService';
 import ReactHtmlParser from "react-html-parser";
 

@@ -1,3 +1,10 @@
-.blog {
-  min-width: 800px;
+@media only screen and (max-width: 767px) {
+   table {
+     width: auto !important;
+   }
+
+   td {
+     vertical-align: middle;
+   }
+  
 }
