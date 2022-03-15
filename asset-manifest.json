@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.d77af7b6.chunk.css",
-    "main.js": "/static/js/main.4c33e1d8.chunk.js",
-    "main.js.map": "/static/js/main.4c33e1d8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.07709124.js",
-    "runtime-main.js.map": "/static/js/runtime-main.07709124.js.map",
+    "main.css": "/static/css/main.cd1c06fc.chunk.css",
+    "main.js": "/static/js/main.27c87e1d.chunk.js",
+    "main.js.map": "/static/js/main.27c87e1d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3feba6b8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3feba6b8.js.map",
     "static/css/2.8ddd9e3d.chunk.css": "/static/css/2.8ddd9e3d.chunk.css",
-    "static/js/2.b326b612.chunk.js": "/static/js/2.b326b612.chunk.js",
-    "static/js/2.b326b612.chunk.js.map": "/static/js/2.b326b612.chunk.js.map",
-    "static/js/3.97d9046e.chunk.js": "/static/js/3.97d9046e.chunk.js",
-    "static/js/3.97d9046e.chunk.js.map": "/static/js/3.97d9046e.chunk.js.map",
+    "static/js/2.731803cc.chunk.js": "/static/js/2.731803cc.chunk.js",
+    "static/js/2.731803cc.chunk.js.map": "/static/js/2.731803cc.chunk.js.map",
+    "static/js/3.604109a5.chunk.js": "/static/js/3.604109a5.chunk.js",
+    "static/js/3.604109a5.chunk.js.map": "/static/js/3.604109a5.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.8ddd9e3d.chunk.css.map": "/static/css/2.8ddd9e3d.chunk.css.map",
-    "static/css/main.d77af7b6.chunk.css.map": "/static/css/main.d77af7b6.chunk.css.map",
-    "static/js/2.b326b612.chunk.js.LICENSE.txt": "/static/js/2.b326b612.chunk.js.LICENSE.txt",
+    "static/css/main.cd1c06fc.chunk.css.map": "/static/css/main.cd1c06fc.chunk.css.map",
+    "static/js/2.731803cc.chunk.js.LICENSE.txt": "/static/js/2.731803cc.chunk.js.LICENSE.txt",
     "static/media/LogoChurch.fb274976.png": "/static/media/LogoChurch.fb274976.png",
     "static/media/LogoChurchLong.ba898453.png": "/static/media/LogoChurchLong.ba898453.png",
     "static/media/honorat.a3a5fb3c.jpg": "/static/media/honorat.a3a5fb3c.jpg",
@@ -32,6 +32,7 @@
     "static/media/pic2.8c139fa4.jpg": "/static/media/pic2.8c139fa4.jpg",
     "static/media/pic20.fdc51344.jpg": "/static/media/pic20.fdc51344.jpg",
     "static/media/pic21.1fad9b67.jpg": "/static/media/pic21.1fad9b67.jpg",
+    "static/media/pic22.8f2d6175.jpg": "/static/media/pic22.8f2d6175.jpg",
     "static/media/pic3.8cf0e2f0.jpg": "/static/media/pic3.8cf0e2f0.jpg",
     "static/media/pic4.c2d00821.jpg": "/static/media/pic4.c2d00821.jpg",
     "static/media/pic5.440db717.jpg": "/static/media/pic5.440db717.jpg",
@@ -42,14 +43,14 @@
     "static/media/priestpic1.99db78ec.jpg": "/static/media/priestpic1.99db78ec.jpg",
     "static/media/priestpic2.027b5b8b.jpg": "/static/media/priestpic2.027b5b8b.jpg",
     "static/media/stock-pic2.4463cf75.jpg": "/static/media/stock-pic2.4463cf75.jpg",
-    "static/media/stockpic1.9445f6d7.jpg": "/static/media/stockpic1.9445f6d7.jpg",
-    "static/media/wikipic.5edb9bc7.jpg": "/static/media/wikipic.5edb9bc7.jpg"
+    "static/media/stock-pic3.7f102a81.jpg": "/static/media/stock-pic3.7f102a81.jpg",
+    "static/media/stockpic1.9445f6d7.jpg": "/static/media/stockpic1.9445f6d7.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.07709124.js",
+    "static/js/runtime-main.3feba6b8.js",
     "static/css/2.8ddd9e3d.chunk.css",
-    "static/js/2.b326b612.chunk.js",
-    "static/css/main.d77af7b6.chunk.css",
-    "static/js/main.4c33e1d8.chunk.js"
+    "static/js/2.731803cc.chunk.js",
+    "static/css/main.cd1c06fc.chunk.css",
+    "static/js/main.27c87e1d.chunk.js"
   ]
 }
