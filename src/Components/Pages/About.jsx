@@ -1,10 +1,8 @@
 import React, {useEffect} from 'react';
 import './About.css';
 import {Image} from 'antd';
-import wikipic from '../../Assets/wikipic.jpg';
+import pic22 from '../../Assets/pic22.jpg';
 import pic21 from '../../Assets/pic21.jpg';
-import Config from '../../Config';
-import { Button } from 'antd';
 
 const About = () => {
 
@@ -45,19 +43,23 @@ const About = () => {
         </div>
         <div className='section card organisation'>
           <div className='special'>
-            <Image src={wikipic} preview={false} alt='pic' className='vertical-image' />
+            <Image src={pic22} preview={false} alt='pic' className='vertical-image' />
           </div>
           <div className='text'>
-            <h2>Rok świętego Józefa</h2>
+            <h2>Rok Kościelny i Duszpasterski 2021/2022</h2>
+            <h2>„Posłani w pokoju Chrystusa”</h2>
             <p>
-              Rok 2021 został przez papieża Franciszka ustanowiony rokiem świętego Józefa. Niestrudzona
-              postawa męża Maryji, jego ogromna miłośc i niezłomna wiara, czynią go nie tylko wzorem świętości
-              dla chrześcijan. Oprócz tego święty Józef uczy nas, czym jest męskość i w jaki sposób mężczyźni mogą
-              realizować swoje powołanie.
+              <i>Ten kto Mnie spożywa, będzie żył przeze Mnie"</i> (J 6,57)
             </p>
-            <a href={Config.josephYearLink} target="_blank" rel="noreferrer">
-              <Button type="primary">Więcej</Button>
-            </a>
+            <p>
+              W roku 2022 realizujemy w Polsce kontynuacje Programu Duszpasterskiego „Eucharystia daje życie”. Kościół zachęca nas
+              do dostrzeżena nadzwyczajnej roli Eucharystii w naszym życiu oraz rzeczywistej obecności Pana Jezusa w Najświętszym Sakramencie.
+            </p>
+            <p>
+              Jak powiedział św. Jan Paweł II: „W Najświętszej Eucharystii zawiera się bowiem całe dobro duchowe Kościoła, to znaczy sam Chrystus, 
+              nasza Pascha i Chleb żywy, który przez swoje ożywione przez Ducha Świętego i ożywiające Ciało daje życie ludziom. Dlatego też 
+              Kościół nieustannie zwraca swe spojrzenie ku swojemu Panu, obecnemu w Sakramencie Ołtarza, w którym objawia On w pełni ogrom swej miłości”.
+            </p>
           </div>
         </div>
     </div>
