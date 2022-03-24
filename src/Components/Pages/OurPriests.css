@@ -13,3 +13,7 @@
   flex-direction: column;
   align-items: flex-end;
 }
+.priests>:nth-child(2) div {
+  display: flex;
+  justify-content: flex-end;
+}
