@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './Intensions.css';
 import BlogService from '../../BlogService';
-import ReactHtmlParser from "react-html-parser";
+import parse from 'html-react-parser';
 
 const Intensions = () => {
 
@@ -24,7 +24,7 @@ const Intensions = () => {
       <div className='section card organisation'>
         <div className='text'>
           {blogPost && blogPost.content &&
-            ReactHtmlParser(blogPost.content)
+            parse(blogPost.content)
           }
         </div>
       </div>

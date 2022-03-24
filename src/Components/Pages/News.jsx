@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './News.css';
 import BlogService from '../../BlogService';
-import ReactHtmlParser from "react-html-parser";
+import parse from 'html-react-parser';
 
 const News = () => {
 
@@ -23,7 +23,7 @@ const News = () => {
     <div className='news sub-page'>
       <div className='card blog'>
         {blogPost && blogPost.content &&
-          ReactHtmlParser(blogPost.content)
+          parse(blogPost.content)
         }
       </div>
     </div>
