@@ -21,39 +21,7 @@ const Retreat = () => {
           />
         </div>
         <div className="text">
-          <h2>Niedziela 20.03.2022</h2>
-          <ul>
-            <li> 8:00 - Msza św. z nauką ogólną.</li>
-            <li> 10:00 - Msza św. z nauką dla młodzieży.</li>
-            <li> 11:30 - Msza św. z nauką dla dzieci.</li>
-            <li> 16:00 - „Gorzkie Żale” z kazaniem pasyjnym.</li>
-            <li> 16:30 - Msza św. z nauką ogólną.</li>
-          </ul>
-          <h2>Poniedziałek 21.03.2022</h2>
-          <ul>
-            <li> 8:00  - Msza św. z nauką ogólną. </li>
-            <li> 9:30 - Nauka dla dzieci kl. 1 do 4 oraz Przedszkola.</li>
-            <li> 11:00 - Nauka dla dzieci i młodzieży kl. 5 do 8.</li>
-            <li> 17:30 - Msza św. z nauką ogólną.</li>
-          </ul>
-          <h2>Wtorek 22.03.2022</h2>
-          <ul>
-            <li> 7:30  - Spowiedź dla wszystkich.</li>
-            <li> 8:00 - Msza św. z nauką ogólną.</li>
-            <li> 9:15 - Spowiedź kl. 4.</li>
-            <li> 9:30 - Nauka ogólna dla dzieci kl. 1 do 4 oraz Przedszkola.</li>
-            <li> 10:30  - Spowiedź kl. 5 do 8.</li>
-            <li> 11:00 - Msza św. dla dzieci i młodzieży kl. 5 do 8. </li>
-            <li> 17:00 - Spowiedź dla wszystkich.</li>
-            <li> 17:30 - Msza św. z nauką ogólną – Zakończenie.</li>
-          </ul>     
-          <h2>Środa 23.03.2022</h2>
-          <ul>
-
-            <li> 9:30 - Msza św. dla dzieci kl. 1 do 4 oraz Przedszkola.</li>
-            <li> 11:30 - Msza św. dla dzieci i młodzieży kl. 5 do 8</li>
-          </ul>    
-          
+          <h2>Adwent 2022</h2>   
         </div>
       </div>
     </div>
