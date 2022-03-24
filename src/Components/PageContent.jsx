@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import MainPage from './Pages/MainPage';
 import News from './Pages/News';
 import About from './Pages/About';
@@ -14,16 +14,16 @@ const PageContent = () => {
 
   return(
     <div className='page-content'>
-      <Switch>
-        <Route path='/ogloszenia' component={News}/>
-        <Route path='/o-parafii' component={About} />
-        <Route path='/ksieza' component={OurPriests}/>
-        <Route path='/galeria' component={Gallery} />
-        <Route path='/linki' component={Links} />
-        <Route path='/intencje' component={Intensions} />
-        <Route path='/rekolekcje' component={Retreat} />
-        <Route path='/' component={MainPage} />
-      </Switch>
+      <Routes>
+        <Route path='/ogloszenia' element={<News/>}/>
+        <Route path='/o-parafii' element={<About/>} />
+        <Route path='/ksieza' element={<OurPriests/>}/>
+        <Route path='/galeria' element={<Gallery/>} />
+        <Route path='/linki' element={<Links/>} />
+        <Route path='/intencje' element={<Intensions/>} />
+        <Route path='/rekolekcje' element={<Retreat/>} />
+        <Route path='/' element={<MainPage/>} />
+      </Routes>
 
     </div>
   )
