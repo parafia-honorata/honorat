@@ -29,6 +29,12 @@ const MainPage = () => {
       <div className='section card title'>
         <h1>Parafia Rzymskokatolicka pw. bł. Honorata Koźmińskiego w Będzinie-Grodźcu</h1>
       </div>
+      <div className='section card announcement'>
+        <h1>Peregrynacja Krzyża i relikwii św. Jana Pawła II</h1>
+        <Link to={'/peregrynacja'}>
+            <Button type="primary">Więcej</Button>
+        </Link>
+      </div>
       <div className='section most-important'>
         <div className='carousel'>
           {isMobile ?
