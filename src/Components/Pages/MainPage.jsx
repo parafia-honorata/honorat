@@ -30,8 +30,8 @@ const MainPage = () => {
         <h1>Parafia Rzymskokatolicka pw. bł. Honorata Koźmińskiego w Będzinie-Grodźcu</h1>
       </div>
       <div className='section card announcement'>
-        <h1>Peregrynacja Krzyża i relikwii św. Jana Pawła II</h1>
-        <Link to={'/peregrynacja'}>
+        <h1>Wielki Tydzień 2022</h1>
+        <Link to={'/wielki-tydzien'}>
             <Button type="primary">Więcej</Button>
         </Link>
       </div>

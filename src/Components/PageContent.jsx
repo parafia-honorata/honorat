@@ -21,7 +21,7 @@ const PageContent = () => {
         <Route path='/galeria' element={<Gallery/>} />
         <Route path='/linki' element={<Links/>} />
         <Route path='/intencje' element={<Intensions/>} />
-        <Route path='/peregrynacja' element={<Retreat/>} />
+        <Route path='/wielki-tydzien' element={<Retreat/>} />
         <Route path='/' element={<MainPage/>} />
       </Routes>
 
