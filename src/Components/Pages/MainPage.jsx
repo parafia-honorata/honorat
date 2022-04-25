@@ -29,12 +29,6 @@ const MainPage = () => {
       <div className='section card title'>
         <h1>Parafia Rzymskokatolicka pw. bł. Honorata Koźmińskiego w Będzinie-Grodźcu</h1>
       </div>
-      <div className='section card announcement'>
-        <h1>Wielki Tydzień 2022</h1>
-        <Link to={'/wielki-tydzien'}>
-            <Button type="primary">Więcej</Button>
-        </Link>
-      </div>
       <div className='section most-important'>
         <div className='carousel'>
           {isMobile ?
