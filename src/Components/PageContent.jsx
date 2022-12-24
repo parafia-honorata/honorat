@@ -9,6 +9,7 @@ import OurPriests from './Pages/OurPriests';
 import Intensions from './Pages/Intensions';
 import Links from './Pages/Links';
 import Retreat from "./Pages/Retreat";
+import Visits from './Pages/Visits';
 
 const PageContent = () => {
 
@@ -23,6 +24,7 @@ const PageContent = () => {
         <Route path='/intencje' element={<Intensions/>} />
         <Route path='/wielki-tydzien' element={<Retreat/>} />
         <Route path='/' element={<MainPage/>} />
+        <Route path="/koleda" element={<Visits />} />
       </Routes>
 
     </div>

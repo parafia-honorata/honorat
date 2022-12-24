@@ -32,6 +32,21 @@ class BlogService {
     }
   }
 
+  async getVisitsItem() {
+    try {
+      const response = await fetch(`https://www.googleapis.com/blogger/v3/blogs/${Config.blogger.blogKey}/posts/${Config.blogger.visitsKey}?fetchBody=true&fetchImages=false&key=${Config.blogger.apiKey}`, {
+        method: 'get',
+        headers: new Headers({
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        })
+      });
+      return this.handleResponse(response);
+    } catch (error) {
+      return Promise.reject(error);
+    }
+  }
+
   handleResponse(response) {
     if (!response.ok) {
       return Promise.reject(response.statusText);
