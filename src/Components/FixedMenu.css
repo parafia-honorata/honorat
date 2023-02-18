@@ -98,4 +98,8 @@
     height: 50px;
   }
 
+  .page .logo {
+    width: 100%;
+  }
+
 }
