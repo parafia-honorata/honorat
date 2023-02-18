@@ -17,14 +17,14 @@ const Intensions = () => {
     setBlogPost(blogItem);
   }
 
-  console.log('BLOG POST', blogPost);
-
   return(
     <div className='intensions sub-page'>
       <div className='section card organisation'>
         <div className='text'>
-          {blogPost && blogPost.content &&
+          {(blogPost && blogPost.content) ?
             parse(blogPost.content)
+            :
+            <div class="lds-dual-ring"></div>
           }
         </div>
       </div>

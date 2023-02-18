@@ -2,8 +2,6 @@ import React, {useEffect, useState} from 'react';
 import './News.css';
 import BlogService from '../../BlogService';
 import parse from 'html-react-parser';
-import { Button } from 'antd';
-import {Link} from 'react-router-dom';
 
 const News = () => {
 
@@ -19,19 +17,13 @@ const News = () => {
     setBlogPost(blogItem);
   }
 
-  console.log('BLOG POST', blogPost);
-
   return(
     <div className='news sub-page'>
       <div className='card blog'>
-        <p>Informacje kolędowe:</p>
-        <Link to={'/koleda'}>
-          <Button type="primary">Kolęda</Button>
-        </Link>
-      </div>
-      <div className='card blog'>
-        {blogPost && blogPost.content &&
+        {(blogPost && blogPost.content) ?
           parse(blogPost.content)
+          :
+          <div class="lds-dual-ring"></div>
         }
       </div>
     </div>
