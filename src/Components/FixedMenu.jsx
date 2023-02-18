@@ -52,13 +52,26 @@ const FixedMenu = () => {
     },
     {
       title: 'Galeria',
-      key: '/galeria'
+      key: 'https://drive.google.com/drive/folders/1s6g6oZ2K5BW_3otAI-SUd1wNBGV6xYgc?usp=sharing',
+      isExternal: true
     },
     {
       title: 'Przydatne linki',
       key: '/linki'
     }
   ]
+
+  const renderLink = (link) => {
+    if (link.isExternal) {
+      return (
+        <a href={link.key} target="_blank" rel="noreferrer"><Button type="primary" id={link.key} onClick={handleClick}>{link.title}</Button></a>
+      )
+    } else {
+      return (
+        <Link to={link.key}><Button type="primary" id={link.key} onClick={handleClick}>{link.title}</Button></Link>
+      )
+    }
+  }
 
   return(
     <React.Fragment>
@@ -77,12 +90,12 @@ const FixedMenu = () => {
               onClose={onClose}
               visible={drawerVisible}
             >
-              {itemList.map((item) => <Link to={item.key}><Button type="primary" id={item.key} onClick={handleClick}>{item.title}</Button></Link>)}
+              {itemList.map((link) => renderLink(link))}
             </Drawer>
           </div>
           :
           <div className='menu-list'>
-            {itemList.map((item) => <Link to={item.key}><Button type="primary" id={item.key} onClick={handleClick}>{item.title}</Button></Link>)}
+            {itemList.map((link) => renderLink(link))}
           </div>
         }
 
