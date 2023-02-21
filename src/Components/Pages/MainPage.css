@@ -4,10 +4,18 @@
 }
 
 .section.title {
-  width: 100%;
+  padding: 0 100px;
   flex: 1;
   justify-content: center;
   font-family: "Georgia", Helvetica, Arial, serif;
+  margin-top: 20px;
+  background-color: rgb(96, 32, 23 );
+  color: white;
+}
+
+.section.title h1 {
+  color: white;
+  font-weight:600;
 }
 
 .section.announcement {
@@ -50,6 +58,11 @@
 }
 
 @media only screen and (max-width: 767px) {
+
+  .section.title {
+    padding: 0 40px;
+  }
+
   .section.most-important {
     align-items: center;
   }

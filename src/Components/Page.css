@@ -7,6 +7,8 @@
   align-items: center;
   width: 100%;
   background-color: rgb(255, 218, 218);
+  background-size: cover;
+  background-position: center; 
 }
 
 .page .flex-box {
@@ -15,7 +17,6 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
-  padding-top: 60px;
 }
 
 .sub-page {
@@ -52,8 +53,9 @@
   flex-direction: row-reverse;
 }
 
-.reverted .special {
+.reverted .special .ant-image {
   justify-content: flex-end;
+  display: flex;
 }
 
 .vertical-image {
@@ -74,7 +76,8 @@
     margin-left: 10px;
     margin-right: 10px; 
   }
-  .section .special {
+  .section .special .ant-image {
+    display: flex;
     justify-content: center;
   }
   .sub-page h1 {

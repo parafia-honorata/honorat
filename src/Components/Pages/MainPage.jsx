@@ -27,7 +27,7 @@ const MainPage = () => {
   return(
     <div className='main-page sub-page'>
       <div className='section card title'>
-        <h1>Parafia Rzymskokatolicka pw. bł. Honorata Koźmińskiego w Będzinie-Grodźcu</h1>
+        <h1>Parafia Rzymskokatolicka <br /> pw. bł. Honorata Koźmińskiego <br /> w Będzinie-Grodźcu</h1>
       </div>
       <div className='section most-important'>
         <div className='carousel'>
