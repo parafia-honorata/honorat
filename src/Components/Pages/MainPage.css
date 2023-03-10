@@ -18,6 +18,14 @@
   font-weight:600;
 }
 
+.section.special-info {
+  padding: 0 50px;
+  flex: 1;
+  justify-content: center;
+  font-family: "Georgia", Helvetica, Arial, serif;
+  margin-top: 20px;
+}
+
 .section.announcement {
   width: 100%;
   justify-content: center;

@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import './Visits.css';
+import './AdditionalInfo.css';
 import BlogService from '../../BlogService';
 import parse from 'html-react-parser';
 
-const Visits = () => {
+const AdditionalInfo = () => {
 
   const [blogPost, setBlogPost] = useState(null);
 
@@ -13,7 +13,7 @@ const Visits = () => {
   }, []);
 
   const getBlogPost = async () => {
-    const blogItem = await BlogService.getVisitsItem();
+    const blogItem = await BlogService.getAdditionalInfoItem();
     setBlogPost(blogItem);
   }
 
@@ -30,4 +30,4 @@ const Visits = () => {
   )
 }
 
-export default Visits;
+export default AdditionalInfo;

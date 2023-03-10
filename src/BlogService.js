@@ -32,7 +32,7 @@ class BlogService {
     }
   }
 
-  async getVisitsItem() {
+  async getAdditionalInfoItem() {
     try {
       const response = await fetch(`https://www.googleapis.com/blogger/v3/blogs/${Config.blogger.blogKey}/posts/${Config.blogger.visitsKey}?fetchBody=true&fetchImages=false&key=${Config.blogger.apiKey}`, {
         method: 'get',

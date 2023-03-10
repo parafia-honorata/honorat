@@ -5,3 +5,10 @@
 .news .blog {
   width: 100%;
 }
+
+.above-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
