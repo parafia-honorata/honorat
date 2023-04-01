@@ -29,6 +29,14 @@ const MainPage = () => {
       <div className='section card title'>
         <h1>Parafia Rzymskokatolicka <br /> pw. bł. Honorata Koźmińskiego <br /> w Będzinie-Grodźcu</h1>
       </div>
+      <div className='section card special-info'>
+        <h1>
+          Wielki Tydzień 2023 <br /> 
+          <Link to={'/dodatkowe-informacje'}>
+            <Button type="primary">Szczegóły</Button>
+          </Link>
+        </h1>
+      </div>
       <div className='section most-important'>
         <div className='carousel'>
           {isMobile ?
