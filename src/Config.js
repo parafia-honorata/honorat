@@ -5,9 +5,9 @@ const Config = {
     newsPostKey: '9080369978767186307',
     intensionsPostKey: '7265091610220609113',
     blogKey: '7955947420807723946',
-    visitsKey: '6451604401404734541',
+    additionalInfoKey: '6451604401404734541',
+    flashNews: '3363260122535694906'
   },
-  josephYearLink: 'https://www.vaticannews.va/pl/papiez/news/2020-12/papiez-oglasza-rok-poswiecony-swietemu-jozefowi.html'
 }
 
 export default Config;

@@ -2,9 +2,9 @@ import Config from "./Config";
 
 class BlogService {
 
-  async getNewsItem() {
+  async getItem(postKey) {
     try {
-      const response = await fetch(`https://www.googleapis.com/blogger/v3/blogs/${Config.blogger.blogKey}/posts/${Config.blogger.newsPostKey}?fetchBody=true&fetchImages=false&key=${Config.blogger.apiKey}`, {
+      const response = await fetch(`https://www.googleapis.com/blogger/v3/blogs/${Config.blogger.blogKey}/posts/${postKey}?fetchBody=true&fetchImages=false&key=${Config.blogger.apiKey}`, {
         method: 'get',
         headers: new Headers({
           Accept: 'application/json',
@@ -17,34 +17,20 @@ class BlogService {
     }
   }
 
-  async getIntensionsItem() {
-    try {
-      const response = await fetch(`https://www.googleapis.com/blogger/v3/blogs/${Config.blogger.blogKey}/posts/${Config.blogger.intensionsPostKey}?fetchBody=true&fetchImages=false&key=${Config.blogger.apiKey}`, {
-        method: 'get',
-        headers: new Headers({
-          Accept: 'application/json',
-          'Content-Type': 'application/json'
-        })
-      });
-      return this.handleResponse(response);
-    } catch (error) {
-      return Promise.reject(error);
-    }
+  async getNews() {
+    return this.getItem(Config.blogger.newsPostKey);
   }
 
-  async getAdditionalInfoItem() {
-    try {
-      const response = await fetch(`https://www.googleapis.com/blogger/v3/blogs/${Config.blogger.blogKey}/posts/${Config.blogger.visitsKey}?fetchBody=true&fetchImages=false&key=${Config.blogger.apiKey}`, {
-        method: 'get',
-        headers: new Headers({
-          Accept: 'application/json',
-          'Content-Type': 'application/json'
-        })
-      });
-      return this.handleResponse(response);
-    } catch (error) {
-      return Promise.reject(error);
-    }
+  async getNewsgetIntensions() {
+    return this.getItem(Config.blogger.intensionsPostKey);
+  }
+
+  async getAdditionalInfo() {
+    return this.getItem(Config.blogger.additionalInfoKey);
+  }
+
+  async getFlashNews() {
+    return this.getItem(Config.blogger.flashNews);
   }
 
   handleResponse(response) {

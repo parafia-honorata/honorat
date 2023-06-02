@@ -13,7 +13,7 @@ const Intensions = () => {
   }, []);
 
   const getBlogPost = async () => {
-    const blogItem = await BlogService.getIntensionsItem();
+    const blogItem = await BlogService.getNewsgetIntensions();
     setBlogPost(blogItem);
   }
 

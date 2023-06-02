@@ -13,7 +13,7 @@ const AdditionalInfo = () => {
   }, []);
 
   const getBlogPost = async () => {
-    const blogItem = await BlogService.getAdditionalInfoItem();
+    const blogItem = await BlogService.getAdditionalInfo();
     setBlogPost(blogItem);
   }
 

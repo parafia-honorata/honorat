@@ -1,7 +1,9 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { Carousel, Image, Button } from 'antd';
 import {Link} from 'react-router-dom';
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive';
+import BlogService from '../../BlogService';
+import parse from 'html-react-parser';
 
 import Config from '../../Config';
 import pic1 from '../../Assets/pic1.jpg';
@@ -18,9 +20,17 @@ import './MainPage.css';
 
 const MainPage = () => {
 
+  const [blogPost, setBlogPost] = useState(null);
+
   useEffect(() => {
+    getBlogPost()
     window.scrollTo(0, 0);
   }, []);
+
+  const getBlogPost = async () => {
+    const blogItem = await BlogService.getFlashNews();
+    setBlogPost(blogItem);
+  }
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
   
@@ -29,6 +39,13 @@ const MainPage = () => {
       <div className='section card title'>
         <h1>Parafia Rzymskokatolicka <br /> pw. bł. Honorata Koźmińskiego <br /> w Będzinie-Grodźcu</h1>
       </div>
+      {blogPost && blogPost.content !== "" && 
+        <div className='section card special-info'>
+          <div className='text'>
+            {parse(blogPost.content)}
+          </div>
+        </div>
+      }
       <div className='section most-important'>
         <div className='carousel'>
           {isMobile ?

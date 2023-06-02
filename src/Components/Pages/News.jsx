@@ -13,7 +13,7 @@ const News = () => {
   }, []);
 
   const getBlogPost = async () => {
-    const blogItem = await BlogService.getNewsItem();
+    const blogItem = await BlogService.getNews();
     setBlogPost(blogItem);
   }
 
