@@ -153,6 +153,10 @@ const MainPage = () => {
           <a href={Config.googleMapLink} target="_blank" rel="noreferrer">
             <Button type="primary">Zobacz na mapie</Button>
           </a>
+          <h3>Numer konta:</h3>
+          <h3>77 8591 0007 0410 0690 4678 0002</h3>
+          <h3>Przelewy prosimy składać z dopiskiem "Darowizna".</h3>
+          <h3>Za wszelkie datki serdeczne Bóg zapłać!</h3>
         </div>
       </div>
     </div>

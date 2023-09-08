@@ -6,7 +6,8 @@ const Config = {
     intensionsPostKey: '7265091610220609113',
     blogKey: '7955947420807723946',
     additionalInfoKey: '6451604401404734541',
-    flashNews: '3363260122535694906'
+    flashNews: '3363260122535694906',
+    parafiadaKey: '4717283393621484811'
   },
 }
 

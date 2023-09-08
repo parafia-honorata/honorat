@@ -33,6 +33,10 @@ class BlogService {
     return this.getItem(Config.blogger.flashNews);
   }
 
+  async getParafiada() {
+    return this.getItem(Config.blogger.parafiadaKey);
+  }
+
   handleResponse(response) {
     if (!response.ok) {
       return Promise.reject(response.statusText);
