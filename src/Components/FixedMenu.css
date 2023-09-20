@@ -16,12 +16,12 @@
 .page .logo {
   width: 60%;
   height: auto;
-  background-color: rgb(96, 32, 23 );
+  background-color:rgb(109, 86, 22);
   border-radius: 0 0 10px 0;
 }
 
 .fixed-menu .ant-btn-primary {
-  background-color: rgb(96, 32, 23 );
+  background-color:rgb(109, 86, 22);
   border: none;
   font-size: 20px;
   font-family: "Georgia", Helvetica, Arial, serif;
@@ -34,7 +34,7 @@
 
 .menu-list {
   padding-left: 180px;
-  background-color: rgb(96, 32, 23 );
+  background-color:rgb(109, 86, 22);
   display: flex;
   justify-content: space-evenly;
 }
@@ -42,7 +42,7 @@
 @media only screen and (max-width: 767px) {
   .menu-list {
     padding-left: 180px;
-    background-color: rgb(96, 32, 23 );
+    background-color:rgb(109, 86, 22);
     display: flex;
     justify-content: flex-end;
     height: 44px;
@@ -62,10 +62,10 @@
   }
 
   .ant-drawer .ant-drawer-content {
-    background-color: rgb(96, 32, 23 );
+    background-color:rgb(109, 86, 22);
   }
   .ant-drawer .ant-drawer-header {
-    background-color: rgb(96, 32, 23 );
+    background-color:rgb(109, 86, 22);
     border-bottom: 0px solid white;
     color: white;
   }
@@ -91,7 +91,7 @@
   }
 
   .ant-drawer-body .ant-btn-primary {
-    background-color: rgb(96, 32, 23 );
+    background-color:rgb(109, 86, 22);
     border: none;
     font-size: 20px;
     font-family: "Georgia", Helvetica, Arial, serif;
