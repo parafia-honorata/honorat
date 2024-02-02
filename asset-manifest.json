@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ac99e40c.css",
-    "main.js": "/static/js/main.658c1796.js",
+    "main.js": "/static/js/main.5f6e2f45.js",
     "static/js/377.2ea13c7d.chunk.js": "/static/js/377.2ea13c7d.chunk.js",
     "static/media/pic4.jpg": "/static/media/pic4.440db717d28856a37362.jpg",
     "static/media/stock-pic2.jpg": "/static/media/stock-pic2.4463cf75ee470e4b9ee7.jpg",
@@ -9,6 +9,7 @@
     "static/media/stock-pic3.jpg": "/static/media/stock-pic3.7f102a816f10136ec4f3.jpg",
     "static/media/pic21.jpg": "/static/media/pic21.b643f984ce9cc7d512df.jpg",
     "static/media/pic1.jpg": "/static/media/pic1.e9f70f251a06b42ad75c.jpg",
+    "static/media/biblepic.jpg": "/static/media/biblepic.1d38f50c5afd231c2544.jpg",
     "static/media/pic2.jpg": "/static/media/pic2.c2e379dac3033cbbdf9b.jpg",
     "static/media/pic5.jpg": "/static/media/pic5.6d6c884bd48c391a0906.jpg",
     "static/media/honorat.jpg": "/static/media/honorat.a3a5fb3c1a4a0cfabfa9.jpg",
@@ -19,14 +20,15 @@
     "static/media/LogoChurch.png": "/static/media/LogoChurch.fb2749760dfc25d3d62d.png",
     "static/media/priestpic2.jpg": "/static/media/priestpic2.9aab8e98f9dfedf34fe0.jpg",
     "static/media/pic10.jpg": "/static/media/pic10.72f7fc9e09fe1609300b.jpg",
+    "static/media/rosarypic.jpg": "/static/media/rosarypic.5e09384722eb0f9cc777.jpg",
     "static/media/mapa.jpg": "/static/media/mapa.512999124147531a29ff.jpg",
     "index.html": "/index.html",
     "main.ac99e40c.css.map": "/static/css/main.ac99e40c.css.map",
-    "main.658c1796.js.map": "/static/js/main.658c1796.js.map",
+    "main.5f6e2f45.js.map": "/static/js/main.5f6e2f45.js.map",
     "377.2ea13c7d.chunk.js.map": "/static/js/377.2ea13c7d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac99e40c.css",
-    "static/js/main.658c1796.js"
+    "static/js/main.5f6e2f45.js"
   ]
 }
