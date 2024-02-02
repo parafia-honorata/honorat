@@ -7,7 +7,8 @@ const Config = {
     blogKey: '7955947420807723946',
     additionalInfoKey: '6451604401404734541',
     flashNews: '3363260122535694906',
-    parafiadaKey: '4717283393621484811'
+    parafiadaKey: '4717283393621484811',
+    bibleMeetingKey: '2119565965114404727',
   },
 }
 

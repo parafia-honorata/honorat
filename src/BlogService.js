@@ -37,6 +37,10 @@ class BlogService {
     return this.getItem(Config.blogger.parafiadaKey);
   }
 
+  async getBibleGroup() {
+    return this.getItem(Config.blogger.bibleMeetingKey);
+  }
+
   handleResponse(response) {
     if (!response.ok) {
       return Promise.reject(response.statusText);

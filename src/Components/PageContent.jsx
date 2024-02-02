@@ -10,6 +10,7 @@ import Links from './Pages/Links';
 import Retreat from "./Pages/Retreat";
 import AdditionalInfo from './Pages/AdditionalInfo';
 import Parafiada from './Pages/Parafiada';
+import Groups from './Pages/Groups';
 
 const PageContent = () => {
 
@@ -24,6 +25,7 @@ const PageContent = () => {
         <Route path='/wielki-tydzien' element={<Retreat/>} />
         <Route path='/dodatkowe-informacje' element={<AdditionalInfo/>} />
         <Route path='/parafiada' element={<Parafiada/>} />
+        <Route path='/grupy' element={<Groups />} />
         <Route path='/' element={<MainPage/>} />
       </Routes>
 
