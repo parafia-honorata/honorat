@@ -41,6 +41,10 @@ class BlogService {
     return this.getItem(Config.blogger.bibleMeetingKey);
   }
 
+  async getParishRoom() {
+    return this.getItem(Config.blogger.parishRoomKey);
+  }
+
   handleResponse(response) {
     if (!response.ok) {
       return Promise.reject(response.statusText);

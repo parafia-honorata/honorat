@@ -10,14 +10,21 @@ import parse from 'html-react-parser';
 const Groups = () => {
 
   const [bibleMeetingInfo, setBibleMeetingInfo] = useState(null);
+  const [parishRoomInfo, setParishGroupInfo] = useState(null);
 
   const getBlogPost = async () => {
     const blogItem = await BlogService.getBibleGroup();
     setBibleMeetingInfo(blogItem);
   }
 
+  const getparishRoomPost = async () => {
+    const blogItem = await BlogService.getParishRoom();
+    setParishGroupInfo(blogItem);
+  }
+
   useEffect(() => {
-    getBlogPost()
+    getBlogPost();
+    getparishRoomPost();
     window.scrollTo(0, 0);
   }, []);
 
@@ -60,6 +67,11 @@ const Groups = () => {
         <div className='text'>
           <h1>Salka parafialna</h1>
           <p>Przy kościele znajduje się salka parafialna wyposażona w stoły do ping-ponga i piłkarzyków. Zapraszamy do kontaktu telefonicznego z koordynatorem:</p>
+          {(bibleMeetingInfo && bibleMeetingInfo.content) ?
+            parse(parishRoomInfo.content)
+            :
+            <div class="lds-dual-ring"></div>
+          }
         </div>
       </div>
     </div>

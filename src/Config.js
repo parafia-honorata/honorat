@@ -9,6 +9,7 @@ const Config = {
     flashNews: '3363260122535694906',
     parafiadaKey: '4717283393621484811',
     bibleMeetingKey: '2119565965114404727',
+    parishRoomKey: `6960826542589417738`
   },
 }
 
