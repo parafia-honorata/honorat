@@ -67,7 +67,7 @@ const Groups = () => {
         <div className='text'>
           <h1>Salka parafialna</h1>
           <p>Przy kościele znajduje się salka parafialna wyposażona w stoły do ping-ponga i piłkarzyków. Zapraszamy do kontaktu telefonicznego z koordynatorem:</p>
-          {(bibleMeetingInfo && bibleMeetingInfo.content) ?
+          {(parishRoomInfo && parishRoomInfo.content) ?
             parse(parishRoomInfo.content)
             :
             <div class="lds-dual-ring"></div>

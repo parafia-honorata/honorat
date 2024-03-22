@@ -51,6 +51,10 @@ const FixedMenu = () => {
       key: '/ksieza'
     },
     {
+      title: 'Grupy parafialne',
+      key: '/grupy'
+    },
+    {
       title: 'Galeria',
       key: 'https://drive.google.com/drive/folders/1s6g6oZ2K5BW_3otAI-SUd1wNBGV6xYgc?usp=sharing',
       isExternal: true
@@ -64,11 +68,11 @@ const FixedMenu = () => {
   const renderLink = (link) => {
     if (link.isExternal) {
       return (
-        <a href={link.key} target="_blank" rel="noreferrer"><Button type="primary" id={link.key} onClick={handleClick}>{link.title}</Button></a>
+        <a href={link.key} target="_blank" rel="noreferrer" key={link.key}><Button type="primary" id={link.key} onClick={handleClick}>{link.title}</Button></a>
       )
     } else {
       return (
-        <Link to={link.key}><Button type="primary" id={link.key} onClick={handleClick}>{link.title}</Button></Link>
+        <Link to={link.key} key={link.key}><Button type="primary" id={link.key} onClick={handleClick}>{link.title}</Button></Link>
       )
     }
   }
