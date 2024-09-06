@@ -62,7 +62,12 @@ const FixedMenu = () => {
     {
       title: 'Przydatne linki',
       key: '/linki'
-    }
+    },
+    {
+      title: 'Facebook',
+      key: 'https://www.facebook.com/ParafiaHonorata/',
+      isExternal: true
+    },
   ]
 
   const renderLink = (link) => {

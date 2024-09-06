@@ -29,6 +29,7 @@ const Links = () => {
               <li><a href='https://niezbednik.niedziela.pl/' rel='noreferrer' target='_blank'>Niezbędnik Niedzieli</a></li>
               <li><a href='https://al-anon.org.pl/informacje-dla-sluzby/' rel='noreferrer' target='_blank'>Grupy Rodzinne Al-Anon</a></li>
               <li><a href='https://christianitas.org/' rel='noreferrer' target='_blank'>Christianitas</a></li>
+              <li><a href='https://www.facebook.com/ParafiaHonorata/' rel='noreferrer' target='_blank'>Nasz profil Facebookowy</a></li>
               <li><a href='https://docs.google.com/document/d/11ABUCQNt68bjKYfPFnjRa4e7iGpvTIMm/edit?usp=sharing&ouid=117760918704177320189&rtpof=true&sd=true' rel='noreferrer' target='_blank'>Standardy Ochrony Dzieci w parafii</a></li>
             </ul>
           </div>
