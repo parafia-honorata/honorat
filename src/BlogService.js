@@ -45,6 +45,10 @@ class BlogService {
     return this.getItem(Config.blogger.parishRoomKey);
   }
 
+  async getMassesAndOffice() {
+    return this.getItem(Config.blogger.massesAndOffice);
+  }
+
   handleResponse(response) {
     if (!response.ok) {
       return Promise.reject(response.statusText);

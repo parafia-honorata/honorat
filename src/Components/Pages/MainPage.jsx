@@ -21,16 +21,21 @@ import './MainPage.css';
 const MainPage = () => {
 
   const [blogPost, setBlogPost] = useState(null);
+  const [secondBlogPost, setSecondBlogPost] = useState(null);
 
   useEffect(() => {
-    getBlogPost()
+    getBlogPosts()
     window.scrollTo(0, 0);
   }, []);
 
-  const getBlogPost = async () => {
+  const getBlogPosts = async () => {
     const blogItem = await BlogService.getFlashNews();
     setBlogPost(blogItem);
+    const secondBlogItem = await BlogService.getMassesAndOffice();
+    setSecondBlogPost(secondBlogItem);
   }
+
+
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
   
@@ -69,24 +74,10 @@ const MainPage = () => {
           <Image src={stockpic1} preview={false} alt='pic' className='vertical-image' />
         </div>
         <div className='text'>
-          <p>
-            <h2>Msze Święte w niedzielę</h2>
-            <ul>
-              <li>8:00</li>
-              <li>10:00</li>
-              <li>11:30</li>
-              <li>16:30</li>
-            </ul>
-            <h2>Msze Święte w dni powszednie</h2>
-            <ul>
-              <li>17:30</li>
-            </ul>
-            <h2>Kancelaria parafialna czynna</h2>
-            <ul>
-              <li>W poniedziałek 18:10 – 19:00</li>
-              <li>W czwartek 18:10 – 19:00</li>
-            </ul>
-          </p>
+          {(secondBlogPost && secondBlogPost.content !== "") ?
+            parse(secondBlogPost.content) :
+            <div class="lds-dual-ring"></div>
+          }
           <Link to={'/ogloszenia'}>
             <Button type="primary">Ogłoszenia</Button>
           </Link>
